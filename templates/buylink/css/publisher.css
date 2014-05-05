@@ -1,0 +1,305 @@
+.title1{
+   color: #1392D2; 
+}
+.title {
+   font: bold 14px Arial,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 5px 5px 15px 0;
+   
+}
+.title2 {
+   font: bold 14px Arial,"Helvetica Neue",Helvetica,Arial,sans-serif;    
+   color: #1392D2;
+}
+.action_status2{
+    background: #e75600 url("../images/bg-action2.png");
+    height: 63px;
+    margin-left: -25px;
+    width: 107%;
+}
+
+.action_status2 ul{
+    list-style: none;    
+    width: 100%;    
+}
+.action_status2 ul li{
+   width: 30%;
+   height: 100%;
+   float: left;
+   text-align: center;
+   padding-top: 20px;
+   font-size: 16px;
+}
+.action_status2 ul li.status2{
+    width: 40%;
+  padding-left: 40px;
+}
+.action_status2 ul li.status3{
+    width: 30%;
+  margin-left: 0px;
+  padding-left: 30px;
+}
+.line{
+    background: url("../images/line.png") repeat-x;
+}
+.title-artile{
+    margin-top: 30px;
+}
+.title-artile .show-hiden{
+    text-align: center;
+    height:25px;
+    width:45px;
+    float:right;
+    border: 1px solid #CCCCCC
+}
+.clear{
+    clear: both;
+}
+.color-red{
+    color: red;
+}
+.checknd{
+    border: 1px solid #CCCCCC;
+    height: 60px;
+    padding: 10px;
+}
+.action-button-buylink div{
+    float: left;
+    width: 33%;
+    height: 35px;
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+  
+}
+.action-button-buylink div.abb1{
+    float: left;
+    background: url("../images/bg-button-action-1.png") no-repeat;
+}
+.action-button-buylink div.abb2{
+   text-align: center;
+}
+.action-button-buylink div.abb1 a{
+   color: white;
+}
+.action-button-buylink div.abb3{
+    float: right;
+    background: url("../images/bg-button-action-2.png") no-repeat;
+    width: 185px;
+}
+.action-button-buylink div.abb3 a{
+   color: white;
+}
+
+/*
+================================================THANH TOAN=============================================================
+=======================================================================================================================
+*/
+.thanhtoan table{
+    font-size: 13px;
+}
+.thanhtoantitle p{
+    color: green;
+    font-size: 18px;
+}
+.thanhtoantitle p span{
+    color: black;
+    font-size: 12px;  
+}
+.thanhtoan table tr.top{
+    background: url("../images/bg-table-top.png") repeat-x;
+}
+
+.thanhtoan table tr.bottom {
+    border-bottom: 1px solid #CCCCCC;
+}
+.thanhtoan div.details {
+    margin-top: 30px;
+}
+.thanhtoan table tr.tbcenter {
+    background: url("../images/bg-table-err.png") repeat-x;
+}
+.thanhtoan div.reported{
+    background: url("../images/bg-sus-ok.png") no-repeat;
+    height: 50px;
+    padding-left: 50px;
+    padding-top: 18px;
+}
+.thanhtoan div.botton{
+    margin-top: 30px;
+}
+.fontsize20{
+    font-size: 30px;
+}
+/*
+================================================Mua nhom link=============================================================
+=======================================================================================================================
+*/
+.addcheck{
+    background: url("../images/check.png") no-repeat;
+    padding-left: 25px;
+}
+.buyarelink table{
+    font-size: 13px;
+    text-align: center;
+}
+.buyarelink table tr.bgadd{
+    background: url("../images/bg-table-chan.png") repeat-x;    
+}
+.buyarelink table tr:first-child{   
+    font-weight: bold;
+}
+.buyarelink table tr.price{   
+    font-weight: bold;
+    color: #cc0000;
+    text-align: right;
+}
+
+.buyarelink table tr td:first-child{   
+    font-weight: bold;
+    text-align: right;
+}
+.color1392D2{ /*da troi*/
+    color: #1392D2;
+}
+.color3366cc{/*nuoc bien*/
+    color: #3366cc;
+}
+.color4b9049{ /*xanh la cay*/
+    color: #4b9049;
+}
+.colorfc6600{ /*cam*/
+    color: #fc6600;
+}
+
+.colorff3300{ /*Do*/
+    color: #ff3300;
+}
+.color9900ff{ /*Tim*/
+    color: #9900ff;
+}
+.font-weight{
+    font-weight: bold;
+}
+.text-right{
+    text-align: right;
+}
+
+/*
+================================================quan lý text link=============================================================
+=======================================================================================================================
+*/
+.buylinkmanage div.col-sm-12{
+    width: 100%;
+}
+.buylinkmanage div.col-sm-12 div #myTabContent{
+    border: none;
+}
+
+.buylinkmanage div.col-sm-12 ul li{
+    
+}
+
+.buylinkmanage .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+   #border-color: #CCCCCC #CCCCCC rgba(0, 0, 0, 0);   
+}
+.buylinkmanage ul li a{
+    font-size: 12px;
+    
+}
+.buylinkmanage div#myTabContent{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.buylinkmanage .nav > li > a {
+  
+    padding: 4px 4px;
+    
+}
+.buylinkmanage label.col-sm-2{
+    width: 14%;
+    text-align: left;
+}
+
+.managetable tr.top{
+    background: url("../images/bg-table-top.png") repeat-x;
+}
+
+/*
+================================================ website like =============================================================
+=======================================================================================================================
+*/
+
+.weblike form div.col-sm-3{
+    width: 20%;
+    padding-left: 0px;
+}
+
+.weblike form div.form-group{
+    margin-left: 0px;
+}
+.weblike form div.col-sm-6{
+    padding-left: 0px;
+}
+.weblike div.wldanhmuc{
+    color: ;
+}
+.checklevel{
+     border: 1px solid #CCCCCC;
+     border-radius:10px;
+     height: 100px;
+     margin-top: 20px;
+     margin-left: 30px;
+     padding-top: 10px;
+     padding-left: 30px;
+ }
+.checklevel p{
+    margin-left: 20px;
+}
+.links{
+    font-size: 13px;
+}
+/*
+================================================ advertisers =============================================================
+=======================================================================================================================
+*/
+.advcontent{
+    font-size: 13px;
+}
+.advcontent div.center{
+    border: 1px solid #CCCCCC;
+    padding: 15px 15px 15px 0px;
+    margin-top: 20px;
+}
+.advcontent div.top{
+
+    padding-left:  0px;
+}
+.advcontent div.top ul{
+
+    padding-left: 20px;
+}
+.advcontent div.bottom{
+    margin-top: 30px;
+    padding-left: 0px;
+    margin-bottom: 30px;
+}
+.fanpagefacebook{
+    margin-left: -10px;
+}
+/*
+================================================ index    =============================================================
+=======================================================================================================================
+*/
+.doitac{
+    background: url("../images/bg-doi-tac.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 310px;
+    height: 108px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.message-error{
+    color: red;
+    font-weight: bold;
+}

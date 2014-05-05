@@ -1,0 +1,61 @@
+CREATED BY KAI LOON @ KAILOON.COM
+=================================
+
+INTRODUCTION
+============
+Thanks for choosing superfresh by Kai Loon. I hope that you can enjoy your blogging with this theme.
+
+WHAT YOU GET
+============
+1. Theme folder (green)
+2. A psd file with the theme header.
+
+
+HOW TO INSTALL
+==============
+1. Extract the zip file to your wp-content folder.
+2. Log into WordPress administration and click on Appearance > Themes
+3. Look for the "green" image and click on it to install / activate this theme.
+4. Go back to your blog's front page and refresh / reload it.
+
+
+USAGE TIPS
+==========
+4. use <h3></h3> for your title within your post is recommended.
+
+
+FEATURED POST
+=============
+1. Create a category and name it as "featured post". Get the Category ID.
+2. Check the ID of the category, replace the number inte the index.php. Line 12.
+3. Example: 
+	If the ID for the featured post category is 3. Then, we will need 
+		<?php query_posts('cat=-3'); ?>
+ 	For the featured-post.php. We will need
+		<?php query_posts('cat=3&&showposts=1'); ?>
+4. To Write a featured post. I recommend to insert a photo for it. 
+5. Add in a custom field with the key as "thumb", type in the URL for the photo you wish to show (do not be to big)in the value input field.
+
+WRITING A POST
+==============
+1. Post will be cut off using <!--more--> read more tag.
+
+
+ABOUT PAGE
+=============
+1. Create a page and name it as about, save it.
+2. Open about.php, change the page_if to your about page's ID.
+
+
+LOGO/BLOG TITLE
+===============
+1. In Order to change this. You need to edit the header.psd.
+2. Export the Blog Title image and rename the file as "logo.png"
+3. Upload the logo.png to images folder.
+
+
+SUPPORT
+=======
+1. http://www.themetation.com/forum 
+2. chankailoon@gmail.com
+

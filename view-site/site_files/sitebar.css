@@ -1,0 +1,188 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+html{height:100%}
+body
+{
+	font-family:helvetica, arial, sans-serif;
+	color:#1f1f1f;
+	height:100%;
+	min-width:980px;
+	overflow:hidden;
+}
+
+#sitebar
+{
+	height:50px;
+	padding:0 0 0 155px;
+	background:#fff url('../images/backgrounds/sitebar-bg.gif') repeat-x left bottom; 
+	vertical-align:middle;
+	position:relative;
+}
+acronym, abbr
+{
+	border:none;
+	cursor:help;
+}
+a img
+{
+	border:none;
+}
+
+a.logo
+{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+a.view-auction
+{
+	float:left;
+	margin-top:8px;
+}
+
+/****
+ BID FORM
+****/
+
+#bidform
+{
+	background:url('../images/backgrounds/sitebar-divider.png') no-repeat;
+	padding-left:12px;
+	margin-left:10px;
+	float:left;
+	height:50px;
+	width:100px;
+}
+
+#bidform div
+{
+	background:url('../images/backgrounds/sitebar-divider.png') no-repeat right top;
+	padding:6px 0 0 0;
+	height:44px;
+}
+div.simpleform-marker
+{display:none;}
+
+#bidform input.bid
+{
+	display:block;
+	width:84px;
+	font-size:55%;
+	text-align:right;
+	height:12px;
+	margin:0 0 4px 1;
+	color:#be0000;
+	padding:0;
+}
+
+#bidform input#bid
+{
+	background:transparent url(../images/buttons/sitebar-bid.png) no-repeat;
+	width:86px;
+	height:15px;
+	border:none;
+}
+
+input.reservemet
+{
+	color:green;
+}
+
+#sitebar form button
+{
+	border:1px solid #fff;
+	background:transparent;
+	cursor:pointer;
+}
+
+/****
+  BUY IT NOW
+****/
+div.bin
+{
+	margin-left:11px;
+	float:left;
+	width:86px;
+	font-size:65%;
+}
+.bin div
+{
+	color:#be0000;
+	padding-top:8px;
+	margin-bottom:4px;
+	text-align:right;
+}
+.bin div acronym
+{
+	float:left;
+}
+.bin div span
+{
+	color:#245480;
+	font-weight:bold;
+	
+}
+
+/****
+ STATS 
+***/
+.statsbox
+{
+	float:right;
+	width:580px;
+}
+
+.auction-endtime
+{
+	float:right;
+	width:140px;
+	text-align:right;
+	padding:10px 12px;
+	font-size:60%;
+	font-weight:bold;
+	margin:0 10px 0 0;
+	background:url('../images/backgrounds/sitebar-divider.png') no-repeat right top;
+}
+.auction-endtime .timelabel
+{
+	display:block;
+	font-size:90%;
+	padding-bottom:2px;
+	font-weight:normal;
+}
+.endtime
+{
+	font-size:1.1em;
+}
+div.stats
+{
+	float:right;
+	height:39px;
+	width:90px;
+	padding:10px 10px 0 0;
+	margin:0 10px 0 0;
+	background:url('../images/backgrounds/sitebar-divider.png') no-repeat right top;
+	font-size:60%;
+}
+
+div.stats div
+{
+	margin-bottom:2px;
+}
+
+div.stats.wide
+{
+	width:110px;
+}
+
+a.removeframe
+{
+	margin-top:16px;
+	margin-right:8px;
+	display:block;
+	float:right;
+}

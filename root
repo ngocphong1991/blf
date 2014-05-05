@@ -1,0 +1,2 @@
+5,10,15,20,25,30,35,40,45,50,55 * * * * wget -O /dev/null -t 1 -T 84600 http://textlink.vn/cronjob/check-advertiser-links.php >/dev/null 2>&1
+48 10 * * * wget -O /dev/null -t 1 -T 84600 http://textlink.vn/cronjob/cronjob.php >/dev/null 2>&1

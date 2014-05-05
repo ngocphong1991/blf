@@ -1,0 +1,223 @@
+
+body {
+	background-color: #fff;
+}
+
+body, form, fieldset, img, h1, h2, h3, h4, h5, p, div {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+
+
+
+
+.right {
+	display: block;
+	float: right !important;
+}
+
+.left {
+	display: block;
+	float: left !important;
+}
+
+.centered {
+	text-align: center !important;
+}
+
+.alignleft {
+	text-align: left !important;
+}
+
+.alignright {
+	text-align: right !important;
+}
+
+.clear {
+	clear: both !important;
+}
+
+.clearleft {
+	clear: left !important;
+}
+
+.clearright {
+	clear: right !important;
+}
+
+.block {
+	display: block !important;
+}
+
+.inline {
+	display: inline !important;
+}
+
+.hidden {
+	display: none;
+}
+
+.bold {
+	font-weight: bold !important;
+}
+
+.normal {
+	font-weight: normal !important;
+}
+
+.underline {
+	text-decoration: underline !important;
+}
+
+.noline {
+	text-decoration: none !important;
+}
+
+.uppercase {
+	text-transform: uppercase !important;
+}
+
+.half-box {
+	width: 49%;
+}
+
+.third-box {
+	width: 33%;
+}
+
+.debug {
+	background-color: #fff;
+	color: #060;
+	margin: 10px;
+	padding: 5px;
+	font-size: 11px;
+	border: 1px solid #000;
+}
+
+
+
+.pagination {
+	padding: 3px 0;
+} 
+
+.pagination a {
+	font-weight: bold;
+	padding: 0 3px 0 0;
+}
+
+.pagination .current {
+	font-weight: bold;
+	padding: 0 3px 0 0;
+}
+
+
+form.default {
+	margin: 0;
+}
+
+form.default label.field {
+	display: block;
+	width: 110px;
+	float: left;
+	clear: left;
+	text-align: left;
+	padding: 4px 0;
+	margin-right: 15px;
+}
+
+form.default div {
+	padding: 3px 0;
+	display: inline-block;
+	float: left;
+	min-height: 17px;
+}
+
+form.default div.text {
+	padding: 3px 0;
+	display: block;
+	float: none;
+	clear: both;
+}
+
+
+form.default div.head {
+	padding: 3px 0;
+	display: block;
+	float: none;
+	clear: both;
+	text-align: center;
+	font-weight: bold;
+}
+
+form.default div.foot {
+	padding: 3px 0;
+	display: block;
+	width: 100%;
+	clear: both;
+	text-align: center;
+}
+
+
+
+ul.blocks {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.blocks li {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+
+ul.noindent {
+	margin: 0 0 0 12px;
+	padding: 0 0 0 5px;
+}
+
+
+
+
+
+
+
+ul.inline {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+ul.inline li {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+table {
+	border: 0;
+	border-spacing: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+th {
+	padding: 4px;
+	font-weight: bold;
+	text-align: center;
+}
+
+td {
+	padding: 3px;
+}

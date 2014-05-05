@@ -1,0 +1,49 @@
+#ErrorDocument 404 /actions/404error.php
+#ErrorDocument 403 /actions/403error.php
+Options +Indexes +FollowSymlinks
+RewriteEngine on
+#RewriteBase /
+
+RewriteRule ^acount/?$ acount.php
+RewriteRule ^register/?$ register.php
+RewriteRule ^login/?$ account.php
+RewriteRule ^logout/?$ account.php?logout=1
+RewriteRule ^contact/?$ contact.php
+RewriteRule ^abouts/?$ abouts.php
+RewriteRule ^faq/?$ faq.php
+RewriteRule ^blog/?$ blog.php
+
+RewriteRule ^cart/?$ cart.php
+RewriteRule ^account/websites/?$ seller_mywebsites.php?step=1
+RewriteRule ^publishers/?$ publishers.php?step=1
+RewriteRule ^advertisers/?$ advertisers.php
+RewriteRule ^marketplace/?$ marketplace.php
+
+#Thang update
+RewriteRule ^buyalink/?$ buyalink.php
+RewriteRule ^buyarelink/?$ buyarelink.php
+RewriteRule ^checklevel/?$ checklevel.php
+RewriteRule ^managearticlelink/?$ manage-article-link.php
+RewriteRule ^manage-group-buylink/?$ manage-group-buylink.php
+RewriteRule ^weblike/?$ weblike.php
+#End Thang update
+
+RewriteRule ^dashboard/?$ dashboard.php
+RewriteRule ^links/?$ links.php
+RewriteRule ^payouts/?$ payouts.php
+RewriteRule ^profile/?$ profile.php
+RewriteRule ^links-advertiser/?$ links.php?status_id=ALL
+RewriteRule ^links-publisher/?$ link-publishers.php
+
+RewriteRule ^payment/?$ pay-card.php
+RewriteRule ^account/tranmoney/?$ tranmoney.php
+
+#Affiliate
+RewriteRule ^affiliates/?$ affiliates.php
+RewriteRule ^affiliate_coupons/?$ affiliates.php?do=manage
+
+RewriteRule ^dieukhoan/?$ dieukhoan.php?do=dieukhoan
+RewriteRule ^chinhsach/?$ dieukhoan.php?do=chinhsach
+
+Options -Indexes
+php_flag display_errors on

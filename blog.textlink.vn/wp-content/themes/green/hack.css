@@ -1,0 +1,12 @@
+blockquote {
+	margin: 0 0 10px 50px;
+	
+}
+
+#comments ol li .comment-data {
+	height: 120px;
+}
+
+#comments ol li.alt .comment-data {
+	_height: 120px;
+}
