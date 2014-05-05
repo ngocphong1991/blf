@@ -1,12 +1,25 @@
 <div class="wrapper container">
     <!-- START THE BANNER SLIDER -->
-    <div class="home-device">
+    <div class="home-device hidden-xs">
         <div class="swiper-main">
             <div class="swiper-container mainsw">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"> <img src="{$template_dir}/images/banner.png" alt="" /> </div>
                     <div class="swiper-slide"> <img src="{$template_dir}/images/banner.png" alt="" /> </div>
                     <div class="swiper-slide"> <img src="{$template_dir}/images/banner.png" alt="" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination pagination1"></div>
+    </div>
+
+    <div class="home-device hidden-sm hidden-md hidden-lg">
+        <div class="swiper-main">
+            <div class="swiper-container mainswmb">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img src="{$template_dir}/images/responsive/banner.png" alt="" /> </div>
+                    <div class="swiper-slide"> <img src="{$template_dir}/images/responsive/banner.png" alt="" /> </div>
+                    <div class="swiper-slide"> <img src="{$template_dir}/images/responsive/banner.png" alt="" /> </div>
                 </div>
             </div>
         </div>
@@ -22,17 +35,17 @@
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-4">
                 <h5 class="icon-button">ADVERTISERS</h5>
                 <p class="description"><span class="high-light">Dễ dàng xây dựng</span> liên kết chất lượng cao, cải thiện thứ hạng từ khóa và mang lại lượng truy cập lớn cho site của bạn<br>Xây dựng hệ thống liên kết sạch và tự nhiên với hệ thống các website chất lượng khác</p>
                 <p class="view-more"><a class="more jquery-corner" title="Xem thêm" href="{$_config.www}/advertisers">Xem thêm</a></p>
             </div><!-- /.col-sm-4 -->
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-4">
                 <h5 class="icon-button">PUBLISHERS</h5>
                 <p class="description"><span class="high-light">Dễ dàng xây dựng</span> liên kết chất lượng cao, cải thiện thứ hạng từ khóa và mang lại lượng truy cập lớn cho site của bạn<br>Xây dựng hệ thống liên kết sạch và tự nhiên với hệ thống các website chất lượng khác</p>
                 <p class="view-more"><a class="more" title="Xem thêm" href="{$_config.www}/publishers">Xem thêm</a></p>
             </div><!-- /.col-sm-4 -->
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-4">
                 <h5 class="icon-button">ANGENCIES</h5>
                 <p class="description"><span class="high-light">Dễ dàng xây dựng</span> liên kết chất lượng cao, cải thiện thứ hạng từ khóa và mang lại lượng truy cập lớn cho site của bạn<br>Xây dựng hệ thống liên kết sạch và tự nhiên với hệ thống các website chất lượng khác</p>
                 <p class="view-more"><a class="more" href="#">Xem thêm</a></p>
@@ -42,15 +55,20 @@
             <h2>Social Media Links such as <span>Facebook Likes, Facebook Shares, Google Shares</span> and <span>Twitter Tweets</span> will <b>increase website traffic</b></h2>
             <a href="{$_config.www}/register" title="Create My Account Now" class="icon-button-large">Create My Account Now</a>
         </div>
-        <div class="row social">
+        <div class="row social hidden-xs">
             <div><a href="#" title="buy social"><img alt="buy social" src="{$template_dir}/images/buy-social.png"></a></div>
             <div><a href="#" title="link social"><img alt="link social" src="{$template_dir}/images/link-social.png"></a></div>
             <div><a href="#" title="sell social"><img alt="sell social" src="{$template_dir}/images/sell-social.png"></a></div>
         </div>
+        <div class="row social hidden-sm hidden-md hidden-lg">
+            <div><a href="#" title="buy social"><img alt="buy social" src="{$template_dir}/images/responsive/buy-social.png"></a></div>
+            <div><a href="#" title="link social"><img alt="link social" src="{$template_dir}/images/responsive/link-social.png"></a></div>
+            <div><a href="#" title="sell social"><img alt="sell social" src="{$template_dir}/images/responsive/sell-social.png"></a></div>
+        </div>
         <!-- START THE FEATURETTES -->
 
         <div class="row blog">
-            <div class="col-sm-8">
+            <div class="col-sm-8 col-xs-7">
                 <div class="blog-content">
                     <h4>Giới Thiệu BuyLink</h4>
                     <p class="description">
@@ -60,7 +78,7 @@
                     <p class="view-more"><a class="more" title="Xem thêm" href="{$_config.www}/abouts">Xem thêm</a></p>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-5">
                 <div class="blog-tabs">
                     <ul class="nav nav-tabs" id="blog-tab">
                         <!--
