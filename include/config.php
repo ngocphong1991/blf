@@ -24,8 +24,7 @@ include("cart-functions.php");
 require_once("pagination.php");
 
 setlocale(LC_MONETARY, 'en_US');
-//setlocale(LC_MONETARY, 'vi_VN');
-print_r($_config);
+
 $smarty = new Smarty;
 
 if($admin_page == 'Y') {

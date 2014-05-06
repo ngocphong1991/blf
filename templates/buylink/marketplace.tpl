@@ -1,6 +1,6 @@
 <div class="wrapper paper">
     <div class="container">
-        <div class="row">
+        <div class="row inner-content">
             {include file='left-menu.tpl'}
             <div class="col-sm-9 right-content-paper plus">
                 <div class="banner">
@@ -20,8 +20,8 @@
                         <form class="form-horizontal" id="marketplaceFilter" method="get">
                             <div class="control-group">
                                 <div class="form-group">
-                                    <div class="col-sm-3">
-                                        <select class="col-sm-12" name="link_score">
+                                    <div class="col-sm-3 col-xs-3">
+                                        <select class="col-sm-12 col-xs-12" name="link_score">
                                             <option value="">Pageranks</option>
                                             <option value="1">1+</option>
                                             <option value="2">2+</option>
@@ -32,26 +32,26 @@
                                             <option value="7">7+</option>
                                         </select>
                                     </div>
-                                    <div class="col-sm-4">
-                                        <select size="1" name="category_id" id="filterCategory" class="col-sm-12">
+                                    <div class="col-sm-4 col-xs-4">
+                                        <select size="1" name="category_id" id="filterCategory" class="col-sm-12 col-xs-12">
                                             <option value="0" label="-- All Categories --">-- Danh mục website --</option>
                                             {html_options values=$cat_ids output=$cats selected=$smarty.post.cats1}
                                         </select>
                                     </div>
-                                    <div class="col-sm-3">
-                                        <input type="text" class="col-sm-12" name="domain" onblur="updateTextFieldLabel(this, false, 'Tên miền');" onfocus="updateTextFieldLabel(this, true, 'Tên miền');" value="{if isset($smarty.get.domain) && $smarty.get.domain !=''}{$smarty.get.domain}{else}Tên miền{/if}">
+                                    <div class="col-sm-3 col-xs-3">
+                                        <input type="text" class="col-sm-12 col-xs-12" name="domain" onblur="updateTextFieldLabel(this, false, 'Tên miền');" onfocus="updateTextFieldLabel(this, true, 'Tên miền');" value="{if isset($smarty.get.domain) && $smarty.get.domain !=''}{$smarty.get.domain}{else}Tên miền{/if}">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-sm-6">
-                                        <input type="text" onblur="updateTextFieldLabel(this, false, 'Nhập từ khóa cần tìm');" onfocus="updateTextFieldLabel(this, true, 'Nhập từ khóa cần tìm');" value="{if isset($smarty.get.keywords) && $smarty.get.keywords !=''}{$smarty.get.keywords}{else}Nhập từ khóa cần tìm{/if}" name="keywords" class="col-sm-12 border-blue">
+                                    <div class="col-sm-6 col-xs-4">
+                                        <input type="text" onblur="updateTextFieldLabel(this, false, 'Nhập từ khóa cần tìm');" onfocus="updateTextFieldLabel(this, true, 'Nhập từ khóa cần tìm');" value="{if isset($smarty.get.keywords) && $smarty.get.keywords !=''}{$smarty.get.keywords}{else}Nhập từ khóa cần tìm{/if}" name="keywords" class="col-sm-12 col-xs-12 border-blue">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-sm-3 pull-left">
+                                    <div class="col-sm-3 col-xs-3 pull-left">
                                         <button class="button blue-bold">Tìm Kiếm</button>
                                     </div>
-                                    <div class="col-sm-9 pull-right">
+                                    <div class="col-sm-9 col-xs-9 pull-right">
                                         <div class="paging pull-right">
                                             {$Template_Pagignation_Data}
                                         </div>

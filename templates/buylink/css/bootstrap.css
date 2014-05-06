@@ -1980,11 +1980,11 @@ select[multiple].input-lg {
 .form-horizontal .form-control-static {
   padding-top: 7px;
 }
-@media (min-width: 769px) {
-  .form-horizontal .control-label {
-    text-align: right;
-  }
+
+.form-horizontal .control-label {
+  text-align: right;
 }
+
 .form-horizontal .has-feedback .form-control-feedback {
   top: 0;
   right: 15px;

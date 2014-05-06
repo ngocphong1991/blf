@@ -68,7 +68,7 @@
 {elseif $smarty.session.uid eq ''}
 <div class="wrapper">
     <div class="container">
-        <div class="row">
+        <div class="row inner-content">
             {include file='left-menu-user.tpl'}
             <div class="col-sm-9 right-content">
                 <img src="{$template_dir}/images/login.png" />

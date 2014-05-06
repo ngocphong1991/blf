@@ -96,8 +96,8 @@ if(isset($_POST[subcats]) && isset($_POST[cats])){
     $scat_list = get_sub_cat_list($cat_list['cid'][0]);
 }
 
-$meta[title] ='Textlink.vn - Giúp tối ưu doanh thu cho websites, blogs của bạn  !';
-$meta[des] ='Textlink.vn giúp bạn kiếm tiền bằng cách bán textlink trên các website, blog mà bạn đang sở hữu với chi phí tốt nhất và được duy trì ổn định.';
+$meta[title] ='Buylink - Giúp tối ưu doanh thu cho websites, blogs của bạn  !';
+$meta[des] ='Buylink giúp bạn kiếm tiền bằng cách bán textlink trên các website, blog mà bạn đang sở hữu với chi phí tốt nhất và được duy trì ổn định.';
 $smarty->assign('meta', $meta);
 
 $smarty->assign('scats',$scat_list['subcategory']);

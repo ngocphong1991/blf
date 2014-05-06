@@ -1,5 +1,5 @@
-<div class="col-sm-3 left-slider">
-    <div class="register-block">
+<div class="col-sm-3 left-slider" id="left-top">
+    <div class="col-xs-4 col-sm-12 register-block">
         <h6>SIGN UP IN UNDER 1 MINUTE</h6>
         <form id="quickRegister" name="quickRegister" action="register.php" method="post">
             {if isset($msg_quick)}<div class="alert alert-danger">{$msg_quick}</div>{/if}
@@ -15,13 +15,13 @@
             </ul>
         </form>
     </div>
-    <div class="ad-block">
+    <div class="col-xs-4 col-sm-12 ad-block">
         <h4>Become an affiliate</h4>
         <p>Earn additional money by placing an affiliate link to MediaWhiz SEO on your website. Set-up only takes 2 minutes!</p>
         <p><a href="{$_config.www}/register.php" title="Join Now">Join Now!</a>
     </div>
 
-    <div class="fanpagefacebook">
+    <div class="col-xs-4 col-sm-12 fanpagefacebook">
 
     <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FFacebookDevelopers&amp;width=245&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:245px; height:258px;" allowTransparency="true"></iframe>
     </div>

@@ -7,8 +7,8 @@ if(!isset($_SESSION[uid])){
 	exit();
 }
 
-$meta[title] ='Textlink.vn - Nơi bạn thỏa mãn niềm đam mê SEO của mình !';
-$meta[des] ='Textlink.vn giúp bạn chọn mua các textlink có giá trị cao với chi phí hợp lý, thỏa mãn niềm đam mê xây dựng backlinks và nâng cao thứ hạng từ khóa cho website của bạn.';
+$meta[title] ='Buylink - Nơi bạn thỏa mãn niềm đam mê SEO của mình !';
+$meta[des] ='Buylink giúp bạn chọn mua các textlink có giá trị cao với chi phí hợp lý, thỏa mãn niềm đam mê xây dựng backlinks và nâng cao thứ hạng từ khóa cho website của bạn.';
 $smarty->assign('meta', $meta);
 if(isset($_GET['offset']))
 $offset=$_GET['offset'];

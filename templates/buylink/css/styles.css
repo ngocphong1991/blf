@@ -690,7 +690,7 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
 }
 
 /*
-================================================quan lý text link=============================================================
+================================================quan lï¿½ text link=============================================================
 =======================================================================================================================
 */
 .buylinkmanage div.col-sm-12{
@@ -808,7 +808,16 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
     color: red;
     font-weight: bold;
 }
-
+.blog-tabs .tab-pane ul li h5{
+    text-align: left;
+}
+.menu-contact{padding-left: 10px; margin-top: 15px}
+.menu-contact .pub-contact{background: url("../images/phone-pub.png") no-repeat 5px 50% #3399cc; padding: 20px 20px 20px 50px; border-top-left-radius: 4px}
+.menu-contact .adv-contact{background: url("../images/phone-adv.png") no-repeat 5px 50% #8fc72c; padding: 20px 20px 20px 50px}
+.menu-contact .hot-line{background: #d11d1d; padding: 15px 20px 5px; border-bottom-left-radius: 4px}
+.menu-contact .hot-line p{color: #ffffff; font-weight: bold}
+.menu-contact span.title{color: #ffffff; line-height: 30px; font: 15px Arial, Helvetica, sans-serif}
+.menu-contact b{color: #ffffff; font: bold 15px Arial, Helvetica, sans-serif; line-height: 22px;}
 @media (max-width: 769px) {
     .container {
         width: 750px;
@@ -819,9 +828,20 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
     .footer .contact{background: none}
     .footer .service{background: none}
     .footer .contact p{margin-right: 45px}
+    .left-slider .ad-block{margin-top: 0}
+    .left-slider{margin-top: 40px; padding-left: 15px; padding-right: 15px; clear: both; float: left}
+    .left-slider .col-xs-4:first-child{padding-left: 0}
+    .left-slider .col-xs-4:last-child{padding-right: 0}
+    .plus{width: 100%}
+    .left-slider .menu-block .menu-left-wrap .menu-level-1{ width: 220px; float: left}
+    .left-slider .menu-block .menu-left-wrap .menu-level-1.col2{position: absolute; left: 266px}
+    .left-slider .menu-block .menu-left-wrap .menu-level-1.col-center{clear: both}
+    .except{width: 100%; min-height: 300px}
+    .menu-contact{width: 215px; position: absolute; right: 0; margin-top: 0}
 }
 @media (min-width: 769px) {
     .container {
         width: 962px;
     }
+    .left-slider .col-sm-12{padding: 0}
 }

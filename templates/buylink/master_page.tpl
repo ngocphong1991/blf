@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{if $meta.des!=''}{$meta.des}{else}Textlink.vn mang đến cho các chủ website cơ hội phát triển và kiếm tiền bền vững cùng chúng tôi. Đến với Textlink, các bạn sẽ là những người mang đến sự đổi mới cho ngành Internet Marketing tại Việt Nam. Bạn còn chần chừ gì nữa ?{/if}
+    <meta name="description" content="{if $meta.des!=''}{$meta.des}{else}Buylink mang đến cho các chủ website cơ hội phát triển và kiếm tiền bền vững cùng chúng tôi. Đến với Buylink, các bạn sẽ là những người mang đến sự đổi mới cho ngành Internet Marketing tại Việt Nam. Bạn còn chần chừ gì nữa ?{/if}
 Keywords: textlink, backlinks, seo, sem, internet marketing, online marketing, top 1 google, top 1 yahoo." />
-    <meta name="keywords" content="Quảng cáo TextLink Text Link Search Engine Optimization" />
+    <meta name="keywords" content="Quảng cáo TextLink BuyLink Search Engine Optimization" />
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-    <title>{if $meta.title!=''}{$meta.title}{else}Textlink.vn - Mạng quảng cáo textlink hàng đầu và duy nhất tại Việt Nam !{/if}</title>
+    <title>{if $meta.title!=''}{$meta.title}{else}Buylink - Mạng quảng cáo link hàng đầu và duy nhất tại Việt Nam !{/if}</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -69,8 +69,36 @@ Keywords: textlink, backlinks, seo, sem, internet marketing, online marketing, t
                 jQuery('#blog-tab a').click(function (e) {
                     e.preventDefault();
                     jQuery(this).tab('show')
-                })
+                });
 
+                //Setup menu mobile
+                var leftMenu;
+                var leftContent = jQuery('.wrapper .container .row .left-slider');
+                var $width = jQuery('body').width();
+                if($width <= 768){
+                    leftContent.attr('id','left-bottom');
+                    leftMenu = leftContent.remove();
+                    leftMenu.appendTo(".wrapper .container .inner-content");
+                }
+
+                window.onresize = function() {
+                    var $width = jQuery('body').width();
+                    var leftContent = jQuery('.wrapper .container .row .left-slider');
+                    var $id = leftContent.attr('id');
+                    if($width <= 768){
+                        if($id != 'left-bottom'){
+                            leftMenu = leftContent.remove();
+                            leftMenu.appendTo(".wrapper .container .inner-content");
+                            leftContent.attr('id','left-bottom');
+                        }
+                    }else{
+                        if($id != 'left-top'){
+                            leftMenu = leftContent.remove();
+                            leftMenu.prependTo(".wrapper .container .inner-content");
+                            leftContent.attr('id','left-top');
+                        }
+                    }
+                }
             });
         </script>
     {/literal}

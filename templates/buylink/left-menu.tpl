@@ -21,7 +21,7 @@
 
                 </ul>
             </li>-->
-            <li class="menu-level-1">
+            <li class="menu-level-1 col-center">
                 <h5>Quản lý quảng cáo</h5>
                 <ul>
                     <li {if $module_name == 'links'}class="menu-active"{/if}><a href="{$_config.www}/links" title="Quản lý Buylink">Quản lý Buylink</a></li>
@@ -32,7 +32,7 @@
                   -->
                 </ul>
             </li>
-            <li class="menu-level-1">
+            <li class="menu-level-1 col2">
                 <h5>Quản lý tài khoản</h5>
                 <ul>
                     <li {if $module_name == 'profile' &&  $page == ''}class="menu-active"{/if}><a href="{$_config.www}/profile" title="Thông tin tài khoản">Thông tin tài khoản</a></li>
@@ -40,6 +40,17 @@
                     <li {if $module_name == 'payment'}class="menu-active"{/if}><a href="{$_config.www}/payment" title="Nạp tiền">Nạp tiền</a></li>
                     <li {if $module_name == 'admoney-card.php'}class="menu-active"{/if}><a href="{$_config.www}/admoney-card.php" title="Nạp tiền từ coupon">Nạp tiền từ coupon</a></li>
                     <li {if $module_name == 'profile' &&  $page == 'transfer'}class="menu-active"{/if}><a href="{$_config.www}/profile?page=transfer" title="Chuyển tiền">Chuyển tiền</a></li>
+                </ul>
+            </li>
+            <li class="menu-contact">
+                <ul>
+                    <li class="pub-contact"><span class="title">Hỗ trợ <b>Advertiser</b></span><br><b>0944.822.121</b></li>
+                    <li class="adv-contact"><span class="title">Hỗ trợ <b>Publisher</b></span><br><b>0974.795.207</b></li>
+                    <li class="hot-line">
+                        <p>Hot-line</p>
+                        <p>(04) 3558 6999 (Ext: 125)</p>
+                        <p>Email: info@textlink.vn</p>
+                    </li>
                 </ul>
             </li>
         </ul>
