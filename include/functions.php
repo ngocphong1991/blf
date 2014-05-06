@@ -618,7 +618,6 @@ function update_publisher($post_vars, $type="update") {
    		$res = mysql_query('' . 'update `publishersinfo` set `websitename`=\'' . $post['wname'] . '\', `description`=\'' . $post['wdes'] . '\', `sale_price`=\'' . $post['wsale'] . '\', `set_price`=\'' . $post['wsale'] . '\', `keywords`=\'' . $post['keywords'] . '\',`catid`=\'' . $post['cats'] . '\' , `catIds`=\'' . $catIds . '\'  where uid=\'' . $_SESSION['uid'] . '\' and pid=\'' . $pid . '\'');
    }elseif($type=="all"){
 	   $url = getURLPulisher($pid);
-
 	   if($url){
 		   $gpr = google_page_rank($url);
 		   $ar  = alexarank($url);
