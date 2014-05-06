@@ -1,6 +1,6 @@
 <div class="wrapper paper">
     <div class="container">
-        <div class="row">
+        <div class="row inner-content">
             {include file='left-menu.tpl'}
             <div class="col-sm-9 right-content-paper plus">
                 <div class="banner">
@@ -14,13 +14,13 @@
                         {if $msg}<div class="alert alert-danger">{$msg}</div>{/if}
                         <fieldset>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label" for="amount">Số tiền nạp (USD)</label>
-                                <div class="col-sm-9">
+                                <label class="col-sm-3 col-xs-3 control-label" for="amount">Số tiền nạp (USD)</label>
+                                <div class="col-sm-9 col-xs-9">
                                     <input type="text" class="col-sm-4" id="amount" name="amount" value="{$myProfile.username}" />
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-9">
+                                <div class="col-sm-offset-3 col-xs-offset-3 col-sm-9 col-xs-9">
                                     <a href="javascript:void(0)" id="pay"><img src="https://www.nganluong.vn/data/images/merchant/button/btn-paynow-125.png"></a>
                                 </div>
                             </div>

@@ -30,55 +30,55 @@
                                             <fieldset>
                                                 <div class="control-group">
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="username">Tên đăng nhập *</label>
-                                                        <div class="col-sm-9">
-                                                            <input type="text" class="col-sm-8 required" id="username" readonly name="username" value="{$myProfile.username}" />
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="username">Tên đăng nhập *</label>
+                                                        <div class="col-sm-9 col-xs-9">
+                                                            <input type="text" class="col-sm-8 col-xs-8 required" id="username" readonly name="username" value="{$myProfile.username}" />
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="email">Email *</label>
-                                                        <div class="col-sm-9">
-                                                            <input type="text" class="col-sm-8 required email" id="email" readonly name="email" value="{$myProfile.email}" />
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="email">Email *</label>
+                                                        <div class="col-sm-9 col-xs-9">
+                                                            <input type="text" class="col-sm-8 col-xs-8 required email" id="email" readonly name="email" value="{$myProfile.email}" />
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="fullname">Họ và tên *</label>
-                                                        <div class="col-sm-9">
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="fullname">Họ và tên *</label>
+                                                        <div class="col-sm-9 col-xs-9">
                                                             <input type="text" id="fullname" name="data[fullname]" value="{$myProfile.fullname}" class="col-sm-4 required">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="cmnd">Số CMND</label>
-                                                        <div class="col-sm-9">
-                                                            <input type="text" class="col-sm-8 number" id="cmnd" name="data[cmnd]" value="{$myProfile.cmnd}" />
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="cmnd">Số CMND</label>
+                                                        <div class="col-sm-9 col-xs-9">
+                                                            <input type="text" class="col-sm-8 col-xs-8 number" id="cmnd" name="data[cmnd]" value="{$myProfile.cmnd}" />
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="avatar">Ảnh Scan CMND <span class="error">(nếu có)</span></label>
-                                                        <div class="col-sm-9">
-                                                            <input type="file" class="col-sm-8" id="avatar" name="avatar" value="{$myProfile.avatar}" />
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="avatar">Ảnh Scan CMND <span class="error">(nếu có)</span></label>
+                                                        <div class="col-sm-9 col-xs-9">
+                                                            <input type="file" class="col-sm-8 col-xs-8" id="avatar" name="avatar" value="{$myProfile.avatar}" />
                                                             {if $myProfile.avatar}
-                                                                <div class="col-sm-5">
+                                                                <div class="col-sm-5 col-xs-5">
                                                                     <img src="{$myProfile.avatar}" alt="{$myProfile.fullname}" class="img-thumbnail">
                                                                 </div>
                                                             {/if}
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="tax_code">Mã số thuế cá nhân <span class="error">(nếu có)</span> </label>
-                                                        <div class="col-sm-9">
-                                                            <input type="text" class="col-sm-8" value="{$myProfile.tax_code}" id="tax_code" name="data[tax_code]" />
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="tax_code">Mã số thuế cá nhân <span class="error">(nếu có)</span> </label>
+                                                        <div class="col-sm-9 col-xs-9">
+                                                            <input type="text" class="col-sm-8 col-xs-8" value="{$myProfile.tax_code}" id="tax_code" name="data[tax_code]" />
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="address_cmnd">Địa chỉ thường trú (trên CMND) <span class="error">(nếu có)</span> </label>
-                                                        <div class="col-sm-9">
-                                                            <input type="text" class="col-sm-8" value="{$myProfile.address_cmnd}" id="address_cmnd" name="data[address_cmnd]" />
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="address_cmnd">Địa chỉ thường trú (trên CMND) <span class="error">(nếu có)</span> </label>
+                                                        <div class="col-sm-9 col-xs-9">
+                                                            <input type="text" class="col-sm-8 col-xs-8" value="{$myProfile.address_cmnd}" id="address_cmnd" name="data[address_cmnd]" />
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="mobile">Giới tính </label>
-                                                        <div class="col-sm-9">
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="mobile">Giới tính </label>
+                                                        <div class="col-sm-9 col-xs-9">
                                                             <select id="gender" name="gender">
                                                                 {foreach from=$genders key=k item=v}
                                                                     <option value="{$k}" {if $myProfile.gender == $k}selected="selected"{/if}>{$v}</option>
@@ -87,25 +87,25 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="phone">Điện thoại di động </label>
-                                                        <div class="col-sm-9">
-                                                            <input type="text" class="col-sm-8 number" value="{$myProfile.phone}" id="phone" name="data[phone]" />
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="phone">Điện thoại di động </label>
+                                                        <div class="col-sm-9 col-xs-9">
+                                                            <input type="text" class="col-sm-8 col-xs-8 number" value="{$myProfile.phone}" id="phone" name="data[phone]" />
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="city">Thành phố</label>
-                                                        <div class="col-sm-9">
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="city">Thành phố</label>
+                                                        <div class="col-sm-9 col-xs-9">
                                                             <input type="text" class="col-sm-4" id="city" value="{$myProfile.city}" name="data[city]" />
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="address">Địa chỉ (không bắt buộc)</label>
-                                                        <div class="col-sm-9">
-                                                            <input type="text" class="col-sm-8" value="{$myProfile.address}" id="address" name="data[address]" />
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="address">Địa chỉ (không bắt buộc)</label>
+                                                        <div class="col-sm-9 col-xs-9">
+                                                            <input type="text" class="col-sm-8 col-xs-8" value="{$myProfile.address}" id="address" name="data[address]" />
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <div class="col-sm-offset-3 col-sm-9">
+                                                        <div class="col-sm-offset-3 col-xs-offset-3 col-sm-9 col-xs-9">
                                                             <button class="submit-gray button gray jquery-corner">LƯU THAY ĐỔI</button>
                                                         </div>
                                                     </div>
@@ -132,19 +132,19 @@
                                             <fieldset>
                                                 <div class="control-group">
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="email">Email mới</label>
-                                                        <div class="col-sm-9">
-                                                            <input type="text" class="col-sm-8 required email" id="email_change" name="data[email_change]" />
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="email">Email mới</label>
+                                                        <div class="col-sm-9 col-xs-9">
+                                                            <input type="text" class="col-sm-8 col-xs-8 required email" id="email_change" name="data[email_change]" />
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="email_confirm">Nhập lại email</label>
-                                                        <div class="col-sm-9">
-                                                            <input type="text" class="col-sm-8" equalto="#email_change" id="email_change_confirm" name="data[email_change_confirm]"/>
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="email_confirm">Nhập lại email</label>
+                                                        <div class="col-sm-9 col-xs-9">
+                                                            <input type="text" class="col-sm-8 col-xs-8" equalto="#email_change" id="email_change_confirm" name="data[email_change_confirm]"/>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <div class="col-sm-offset-3 col-sm-9">
+                                                        <div class="col-sm-offset-3 col-xs-offset-3 col-sm-9 col-xs-9">
                                                             <button class="submit-gray button gray jquery-corner">LƯU THAY ĐỔI</button>
                                                         </div>
                                                     </div>
@@ -171,19 +171,19 @@
                                             <fieldset>
                                                 <div class="control-group">
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="password">Mật khẩu mới</label>
-                                                        <div class="col-sm-9">
-                                                            <input type="password" class="col-sm-8 required" id="password" name="data[password]" />
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="password">Mật khẩu mới</label>
+                                                        <div class="col-sm-9 col-xs-9">
+                                                            <input type="password" class="col-sm-8 col-xs-8 required" id="password" name="data[password]" />
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-sm-3 control-label" for="password_confirm">Nhập lại mật khẩu</label>
-                                                        <div class="col-sm-9">
-                                                            <input type="password" class="col-sm-8" equalto="#password" minlength="6" id="password_confirm" name="data[password_confirm]"/>
+                                                        <label class="col-sm-3 col-xs-3 control-label" for="password_confirm">Nhập lại mật khẩu</label>
+                                                        <div class="col-sm-9 col-xs-9">
+                                                            <input type="password" class="col-sm-8 col-xs-8" equalto="#password" minlength="6" id="password_confirm" name="data[password_confirm]"/>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <div class="col-sm-offset-3 col-sm-9">
+                                                        <div class="col-sm-offset-3 col-xs-offset-3 col-sm-9 col-xs-9">
                                                             <button class="submit-gray button gray jquery-corner">LƯU THAY ĐỔI</button>
                                                         </div>
                                                     </div>
@@ -243,25 +243,25 @@
                             <fieldset>
                                 <div class="control-group">
                                     <div class="form-group">
-                                        <label class="col-sm-3 control-label" for="data_trans">Số Tiền Chuyển:</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="col-sm-8 required number" id="data_trans" name="data_trans" />
+                                        <label class="col-sm-3 col-xs-3 control-label" for="data_trans">Số Tiền Chuyển:</label>
+                                        <div class="col-sm-9 col-xs-9">
+                                            <input type="text" class="col-sm-8 col-xs-8 required number" id="data_trans" name="data_trans" />
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-3 control-label" for="data_trans">Tổng Số Dư Tài Khoản <strong>Publishers</strong>:</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" readonly class="col-sm-8" value="{$pub_money_str}" id="data_pub_remain" />
+                                        <label class="col-sm-3 col-xs-3 control-label" for="data_trans">Tổng Số Dư Tài Khoản <strong>Publishers</strong>:</label>
+                                        <div class="col-sm-9 col-xs-9">
+                                            <input type="text" readonly class="col-sm-8 col-xs-8" value="{$pub_money_str}" id="data_pub_remain" />
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-3 control-label" for="data_trans">Tổng Số Dư Tài Khoản <strong>Advertisers</strong>:</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" readonly class="col-sm-8" value="{$adv_money_str}" id="data_adv_remain" />
+                                        <label class="col-sm-3 col-xs-3 control-label" for="data_trans">Tổng Số Dư Tài Khoản <strong>Advertisers</strong>:</label>
+                                        <div class="col-sm-9 col-xs-9">
+                                            <input type="text" readonly class="col-sm-8 col-xs-8" value="{$adv_money_str}" id="data_adv_remain" />
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="col-sm-offset-3 col-sm-9">
+                                        <div class="col-sm-offset-3 col-xs-offset-3 col-sm-9 col-xs-9">
                                             <button class="submit-gray button gray jquery-corner">CHUYỂN TIỀN</button>
                                         </div>
                                     </div>

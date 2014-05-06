@@ -31,14 +31,14 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="websiteDescription">Mô tả về website của bạn: *</label>
-                                    <textarea rows="6" class="col-sm-12 required" minlength="150" cols="30" name="wdes" onkeydown="updateWebsiteDescriptionLength(this);" onkeyup="updateWebsiteDescriptionLength(this);" id="websiteDescription">{$smarty.post.wdes}</textarea>
-                                    <p class="col-sm-12 alert alert-info" style="margin-top: 10px"> Nhập vào ít nhất 150 ký tự. ( <span id="websiteDescriptionLength">0</span> )</p>
+                                    <textarea rows="6" class="col-sm-12 col-xs-12 required" minlength="150" cols="30" name="wdes" onkeydown="updateWebsiteDescriptionLength(this);" onkeyup="updateWebsiteDescriptionLength(this);" id="websiteDescription">{$smarty.post.wdes}</textarea>
+                                    <p class="col-sm-12 col-xs-12 alert alert-info" style="margin-top: 10px"> Nhập vào ít nhất 150 ký tự. ( <span id="websiteDescriptionLength">0</span> )</p>
                                 </div>
                                 <div class="form-group">
                                         <div class="checkbox" style="display: inline-block">
                                             <label>
                                                 <input type="checkbox" value="1" name="guide" id="publisherGuide">
-                                                Tôi đồng ý với các điều khoảng trong <a href="{$_config.www}/files/publishers-guide.doc" target="_blank">Publisher's Guide</a>
+                                                Tôi đồng ý với các điều khoản trong <a href="{$_config.www}/files/publishers-guide.doc" target="_blank">Publisher's Guide</a>
                                             </label>
                                         </div>
                                 </div>
@@ -52,17 +52,17 @@
                             <input type="hidden" class="txt2" name="edit_site" value="1" />
                             <div class="hidden control-group" id="submitWebsiteStep2">
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label" for="cats1">Chuyên mục *</label>
-                                    <div class="col-sm-9">
-                                        <select size="1" class="col-sm-6" name="cats1" id="cats1" onChange="javascript: sendReqPost(loc+'js/get_scats.php?cid='+this.value,'sc');">
+                                    <label class="col-sm-3 col-xs-3 control-label" for="cats1">Chuyên mục *</label>
+                                    <div class="col-sm-9 col-xs-9">
+                                        <select size="1" class="col-sm-6 col-xs-6" name="cats1" id="cats1" onChange="javascript: sendReqPost(loc+'js/get_scats.php?cid='+this.value,'sc');">
                                             {html_options values=$cat_ids output=$cats selected=$smarty.post.cats1}
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label" for="langid">Ngôn ngữ:</label>
-                                    <div class="col-sm-9">
-                                        <select class="col-sm-6" xml:id="langid" name="langid" id="filterLanguage">
+                                    <label class="col-sm-3 col-xs-3 control-label" for="langid">Ngôn ngữ:</label>
+                                    <div class="col-sm-9 col-xs-9">
+                                        <select class="col-sm-6 col-xs-6" xml:id="langid" name="langid" id="filterLanguage">
                                             <option selected="selected" value="">-- All Languages --</option>
                                             {section name=num loop=$langs}
                                                 <option value="{$lang_ids[num]}">{$langs[num]}</option>
@@ -71,9 +71,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label" for="adposition">Vị trí quảng cáo:</label>
-                                    <div class="col-sm-9">
-                                        <select class="col-sm-6" id="adposition" name="adposition" size="1">
+                                    <label class="col-sm-3 col-xs-3 control-label" for="adposition">Vị trí quảng cáo:</label>
+                                    <div class="col-sm-9 col-xs-9">
+                                        <select class="col-sm-6 col-xs-6" id="adposition" name="adposition" size="1">
                                             <option value=""></option>
                                             <option selected="selected" value="header" label="Header">Header</option>
                                             <option value="footer" label="Footer">Footer</option>
@@ -84,8 +84,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label" for="adposition">URL is the homepage of your website?</label>
-                                    <div class="col-sm-9">
+                                    <label class="col-sm-3 col-xs-3 control-label" for="adposition">URL is the homepage of your website?</label>
+                                    <div class="col-sm-9 col-xs-9">
                                         <div class="checkbox">
                                             <label for="isHomepageY" class="checkbox-inline">
                                                 <input type="radio" checked="checked" value="Y" name="is_homepage" id="isHomepageY"> Yes
@@ -97,7 +97,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-sm-offset-3 col-sm-9">
+                                    <div class="col-sm-offset-3 col-xs-offset-3 col-sm-9 col-xs-9">
                                         <a onclick="submitWebsiteStep2(); return false;" href="#" class="button blue" id="btnSubmitWebsite2">Đăng website</a>
                                         <a onclick="cancelWebsiteStep2(); return false;" href="#" class="button gray" id="btnWebsiteGoBack">Quay lại</a>
                                     </div>
@@ -178,7 +178,7 @@
 {else}
 <div class="wrapper">
     <div class="container">
-    <div class="row">
+    <div class="row inner-content">
     {include file='left-menu-user.tpl'}
         <div class="col-sm-9 right-content">
             <div class="advcontent">

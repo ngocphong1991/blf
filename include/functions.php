@@ -227,12 +227,12 @@ function google_page_rank($url) {
     if (0 < strlen(trim($url))) {
         $_url     = getTrueDomain($url);
 		$return = get_web_page("http://pagerank.koeniglich.ch/json/".trim($_url));
-		
+
 		if(function_exists('json_decode')){
 			 $page_rank = json_decode($return);
 			 $pagerank = trim($page_rank->rank);
 		}else $pagerank=0;
-		
+
 		/*
         $pagerank = trim(get_pagerank($_url));
 		*/
@@ -595,7 +595,7 @@ function update_publisher($post_vars, $type="update") {
 	$post['wdes'] = mysql_real_escape_string(strip_tags(trim($post['wdes'])));
     $post['wsale'] = isset($post['wsale']) && is_numeric($post['wsale']) ? $post['wsale'] : 0 ;
 	$pid = intval($post[pid]);
-   
+
    if($type=="update_cat")
    { 
    		$gpr = google_page_rank($post[url]);
@@ -616,12 +616,13 @@ function update_publisher($post_vars, $type="update") {
 		
    }elseif($type=="edit"){
    		$res = mysql_query('' . 'update `publishersinfo` set `websitename`=\'' . $post['wname'] . '\', `description`=\'' . $post['wdes'] . '\', `sale_price`=\'' . $post['wsale'] . '\', `set_price`=\'' . $post['wsale'] . '\', `keywords`=\'' . $post['keywords'] . '\',`catid`=\'' . $post['cats'] . '\' , `catIds`=\'' . $catIds . '\'  where uid=\'' . $_SESSION['uid'] . '\' and pid=\'' . $pid . '\'');
-   }elseif($type=="all"){   	
+   }elseif($type=="all"){
 	   $url = getURLPulisher($pid);
+
 	   if($url){
 		   $gpr = google_page_rank($url);
 		   $ar  = alexarank($url);
-	   }	
+	   }
 	   if($gpr>0 && $ar>0){
 	 	  $res = mysql_query('' . 'update `publishersinfo` set `websitename`=\'' . $post['wname'] . '\', `description`=\'' . $post['wdes'] . '\', `keywords`=\'' . $post['keywords'] . '\',`catid`=\'' . $post['cats'] . '\' , `catIds`=\'' . $catIds . '\', `langid`=\'' . $post[langid] . '\',`google_page_rank`=\'' . $gpr . '\', `alexa_rank`=\'' . $ar . '\', `adposition`=\'' . $post['adposition'] . '\', `sale_price`=\'' . $post['wsale'] . '\', `set_price`=\'' . $post['wsale'] . '\', `restriction`=\'' . $post['restriction'] . '\', `approval_method`=\'' . $post['approval_method'] . '\' where uid=\'' . $_SESSION['uid'] . '\' and pid=\'' .  $pid . '\'');
 	   }else

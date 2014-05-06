@@ -811,6 +811,7 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
 .blog-tabs .tab-pane ul li h5{
     text-align: left;
 }
+#submitWebsiteStep2{margin-bottom: 20px}
 .menu-contact{padding-left: 10px; margin-top: 15px}
 .menu-contact .pub-contact{background: url("../images/phone-pub.png") no-repeat 5px 50% #3399cc; padding: 20px 20px 20px 50px; border-top-left-radius: 4px}
 .menu-contact .adv-contact{background: url("../images/phone-adv.png") no-repeat 5px 50% #8fc72c; padding: 20px 20px 20px 50px}
@@ -822,12 +823,15 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
     .container {
         width: 750px;
     }
+    .doitac{bottom: 325px}
+    .right-content-paper{margin-top: 30px; min-height: 400px}
     .marketing h2{font-size: 20px; font-weight: normal}
     .social div{margin-right: 22px}
     .doitac{height: 75px}
     .footer .contact{background: none}
     .footer .service{background: none}
     .footer .contact p{margin-right: 45px}
+    .left-slider{background: #EAF2F5}
     .left-slider .ad-block{margin-top: 0}
     .left-slider{margin-top: 40px; padding-left: 15px; padding-right: 15px; clear: both; float: left}
     .left-slider .col-xs-4:first-child{padding-left: 0}
@@ -838,6 +842,7 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
     .left-slider .menu-block .menu-left-wrap .menu-level-1.col-center{clear: both}
     .except{width: 100%; min-height: 300px}
     .menu-contact{width: 215px; position: absolute; right: 0; margin-top: 0}
+    .paper{background: #ffffff}
 }
 @media (min-width: 769px) {
     .container {

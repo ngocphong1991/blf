@@ -1,6 +1,6 @@
 <div class="wrapper paper">
     <div class="container">
-        <div class="row">
+        <div class="row inner-content">
             {include file='left-menu.tpl'}
             <div class="col-sm-9 right-content-paper plus">
                 <div class="banner">
@@ -17,59 +17,59 @@
                               <div id="updateWebsiteErrors" class="formErrors"></div>
                               <div class="control-group">
                                   <div class="form-group">
-                                      <label class="col-sm-4 control-label" for="websiteTitle">Tiêu Đề Website :</label>
-                                      <div class="col-sm-8">
-                                          <input type="text" class="col-sm-8 required"  maxlength="255" value="{$smarty.post.wname}" name="wname" id="websiteTitle" />
+                                      <label class="col-sm-4 col-xs-4 control-label" for="websiteTitle">Tiêu Đề Website :</label>
+                                      <div class="col-sm-8 col-xs-8">
+                                          <input type="text" class="col-sm-8 col-xs-8 required"  maxlength="255" value="{$smarty.post.wname}" name="wname" id="websiteTitle" />
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-sm-4 control-label" for="websiteDescription">Miêu tả Website*:</label>
-                                      <div class="col-sm-8">
-                                          <textarea cols="45" rows="6" name="wdes" id="websiteDescription" class="col-sm-8 required">{$smarty.post.wdes}</textarea>
+                                      <label class="col-sm-4 col-xs-4 control-label" for="websiteDescription">Miêu tả Website*:</label>
+                                      <div class="col-sm-8 col-xs-8">
+                                          <textarea cols="45" rows="6" name="wdes" id="websiteDescription" class="col-sm-8 col-xs-8 required">{$smarty.post.wdes}</textarea>
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-sm-4 control-label" for="websiteKeywords">Từ khóa: (Rất quan trọng) * </label>
-                                      <div class="col-sm-8">
-                                          <textarea cols="45" rows="2" name="keywords" id="websiteKeywords" class="col-sm-8 required">{$smarty.post.keywords}</textarea>
-                                          <p style="margin-top: 10px" class="small alert col-sm-12 alert-warning">Từ Khóa là thứ miêu tả tốt nhất về Website của bạn. Nó sẽ giúp người dùng dễ dàng tìm thấy website của bạn trong khi tìm kiếm các site cho quảng cáo Text Link. Mỗi từ khóa phải được phân cách bằng một dấu phẩy.</p>
+                                      <label class="col-sm-4 col-xs-4 control-label" for="websiteKeywords">Từ khóa: (Rất quan trọng) * </label>
+                                      <div class="col-sm-8 col-xs-8">
+                                          <textarea cols="45" rows="2" name="keywords" id="websiteKeywords" class="col-sm-8 col-xs-8 required">{$smarty.post.keywords}</textarea>
+                                          <p style="margin-top: 10px" class="small alert col-sm-9 col-xs-12 alert-warning">Từ Khóa là thứ miêu tả tốt nhất về Website của bạn. Nó sẽ giúp người dùng dễ dàng tìm thấy website của bạn trong khi tìm kiếm các site cho quảng cáo Text Link. Mỗi từ khóa phải được phân cách bằng một dấu phẩy.</p>
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-sm-4 control-label" for="websiteSale">Giá Sale :</label>
-                                      <div class="col-sm-8">
-                                          <input type="text" class="col-sm-5 required"  maxlength="255" value="{$smarty.post.wsale}" name="wsale" id="websiteSale" />
+                                      <label class="col-sm-4 col-xs-4 control-label" for="websiteSale">Giá Sale :</label>
+                                      <div class="col-sm-8 col-xs-8">
+                                          <input type="text" class="col-sm-5 col-xs-5 required"  maxlength="255" value="{$smarty.post.wsale}" name="wsale" id="websiteSale" />
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-sm-4 control-label" for="langid">Ngôn Ngữ *:</label>
-                                      <div class="col-sm-8">
-                                          <select id="langid" name="langid" size="1" class="col-sm-5">
+                                      <label class="col-sm-4 col-xs-4 control-label" for="langid">Ngôn Ngữ *:</label>
+                                      <div class="col-sm-8 col-xs-8">
+                                          <select id="langid" name="langid" size="1" class="col-sm-5 col-xs-5">
                                               {html_options values=$lang_ids output=$langs selected=$smarty.post.langid}
                                           </select>
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-sm-4 control-label" for="cats1">Chuyên mục (1) *:</label>
-                                      <div class="col-sm-8">
-                                          <select size="1" name="cats1" onchange="javascript: sendReqPost(loc+'js/get_scats.php?cid='+this.value,'sc');" id="cats1" class="col-sm-5">
+                                      <label class="col-sm-4 col-xs-4 control-label" for="cats1">Chuyên mục (1) *:</label>
+                                      <div class="col-sm-8 col-xs-8">
+                                          <select size="1" name="cats1" onchange="javascript: sendReqPost(loc+'js/get_scats.php?cid='+this.value,'sc');" id="cats1" class="col-sm-5 col-xs-5">
                                               {html_options values=$cat_ids output=$cats selected=$smarty.post.catIds[1]}
                                           </select>
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-sm-4 control-label" for="cats2">Chuyên mục (2):</label>
-                                      <div class="col-sm-8">
-                                          <select size="1" name="cats2" onchange="javascript: sendReqPost(loc+'js/get_scats.php?cid='+this.value,'sc');" id="cats2" class="col-sm-5">
+                                      <label class="col-sm-4 col-xs-4 control-label" for="cats2">Chuyên mục (2):</label>
+                                      <div class="col-sm-8 col-xs-8">
+                                          <select size="1" name="cats2" onchange="javascript: sendReqPost(loc+'js/get_scats.php?cid='+this.value,'sc');" id="cats2" class="col-sm-5 col-xs-5">
                                               <option value=""></option>
                                               {html_options values=$cat_ids output=$cats selected=$smarty.post.catIds[2]}
                                           </select>
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-sm-4 control-label" for="adposition">Vị trí bạn muốn đặt quảng cáo:</label>
-                                      <div class="col-sm-8">
-                                          <select id="adposition" name="adposition" class="col-sm-5" size="1">
+                                      <label class="col-sm-4 col-xs-4 control-label" for="adposition">Vị trí bạn muốn đặt quảng cáo:</label>
+                                      <div class="col-sm-8 col-xs-8">
+                                          <select id="adposition" name="adposition" class="col-sm-5 col-xs-5" size="1">
                                               <option value=""></option>
                                               <option selected="selected" value="header" label="Header">Đầu trang</option>
                                               <option value="footer" label="Footer">Chân trang</option>
@@ -80,8 +80,8 @@
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-sm-4 control-label" for="websiteTitle">Url này là trang chủ?</label>
-                                      <div class="col-sm-8">
+                                      <label class="col-sm-4 col-xs-4 control-label" for="websiteTitle">Url này là trang chủ?</label>
+                                      <div class="col-sm-8 col-xs-8">
                                           <label class="radio-inline">
                                               <input checked="checked" value="Y" name="is_homepage" id="isHomepageY" type="radio"> Có
                                           </label>
@@ -91,8 +91,8 @@
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-sm-4 control-label" for="websiteTitle">Website của bạn có bị chặng ?</label>
-                                      <div class="col-sm-8">
+                                      <label class="col-sm-4 col-xs-4 control-label" for="websiteTitle">Website của bạn có bị chặng ?</label>
+                                      <div class="col-sm-8 col-xs-8">
                                           <label class="radio-inline">
                                               <input value="Y" name="restriction" id="restriction" type="radio"> Có
                                           </label>
@@ -102,8 +102,8 @@
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-sm-4 control-label" for="websiteTitle">Phương Thức Kiểm Duyệt:</label>
-                                      <div class="col-sm-8">
+                                      <label class="col-sm-4 col-xs-4 control-label" for="websiteTitle">Phương Thức Kiểm Duyệt:</label>
+                                      <div class="col-sm-8 col-xs-8">
                                           <label class="radio-inline">
                                               <input id="ApprovalA" name="approval_method" value="A" checked="checked" type="radio"> Tự động
                                           </label>
@@ -113,11 +113,11 @@
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <div class="col-sm-offset-4 col-sm-8">
+                                      <div class="col-sm-offset-4 col-xs-offset-4 col-sm-8 col-xs-8">
                                           <a onclick="updateWebsite(); return false;" href="#" class="button gray">Cập nhật</a>
                                       </div>
                                   </div>
-                                  <div class="col-sm-offset-4 col-sm-6 alert alert-success" style="display: none" id="updateWebsiteResults"></div>
+                                  <div class="col-sm-offset-4 col-xs-offset-4 col-sm-6 col-xs-6 alert alert-success" style="display: none" id="updateWebsiteResults"></div>
 
                                 </div>
                             </fieldset>
