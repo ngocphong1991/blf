@@ -43,7 +43,13 @@
                             </div>
                         </td>
                         <td>USD {$objectOderEdit[i].price|number_format}</td>
-                        <td><a href="{$_config.www}/links">Trở lại</a></td>
+                        <td>
+                            <a href="{$_config.www}/links"><button style="width: 100px" class="button blue-bold" type="button">Cancel</button></a>
+                            <br/>
+                            <br/>
+                            <a href="{$_config.www}/renew.php?id={$objectOderEdit[i].adv_id}"><button style="width: 100px" class="button blue-bold" type="button">Renew</button></a>
+
+                        </td>
                     </tr>
                     <input type="hidden" name="order_id"  value="{$objectOderEdit[i].adv_id}">
                 {/section}
