@@ -18,7 +18,7 @@
                                 <table class="table table-striped links">
                                     <thead>
                                     <tr>
-                                        <td>Your money advertising</td>
+                                        <td>Số dư tài khoản Advertiser</td>
                                         <td>{$yourMoney}</td>
                                     </tr>
                                     </thead>
@@ -26,19 +26,19 @@
 
 
                                     <tr>
-                                        <td>Total money have to pay</td>
+                                        <td>Số tiền phải trả</td>
                                         <td>{$totalPrice}</td>
                                     </tr>
                                     <tr>
-                                        <td>Start date - End date</td>
+                                        <td>Ngày bắt đầu - Hết hạn</td>
                                         <td>{$start_date} - {$end_date}</td>
                                     </tr>
                                     <tr>
-                                        <td>Link Renew</td>
+                                        <td>Textlink</td>
                                         <td>{$allAdvertisersinfo.ad_before} <a href="{$allAdvertisersinfo.ad_url}">{$allAdvertisersinfo.ad_des}</a> {$allAdvertisersinfo.ad_after}</td>
                                     </tr>
                                     <tr>
-                                        <td>On Site</td>
+                                        <td>Trên trang</td>
                                         <td>{$cls_publishersinfo->getPublisherInfo($allAdvertisersinfo.pid, 'websitename')} -
                                             <a href="{$cls_publishersinfo->getPublisherInfo($allAdvertisersinfo.pid, 'url')}">{$cls_publishersinfo->getPublisherInfo($allAdvertisersinfo.pid, 'url')}</a></td>
                                     </tr>
@@ -75,12 +75,12 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-3 pull-left">
-                                    <a href="{$_config.www}/payment"><button style="width: 100px" class="button blue-bold" type="button">Charge Money</button></a>
+                                    <a href="{$_config.www}/payment"><button class="button blue-bold" type="button">Nạp Tiền</button></a>
 
                                 </div>
                                 <div class="col-sm-9 pull-right">
                                     <div class="paging pull-right">
-                                        <a href="{$_config.www}/renew.php?act=pay&id={$adv_id}"><button style="width: 100px" class="button blue-bold" type="button">Payment</button></a>
+                                        <a href="{$_config.www}/renew.php?act=pay&id={$adv_id}"><button class="button blue-bold" type="button">Thanh toán</button></a>
                                     </div>
                                 </div>
                             </div>

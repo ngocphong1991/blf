@@ -28,15 +28,15 @@ if($_POST[promotion]!='Enter code here' && isset($_POST[promotion])){
 	$promotion = strip_tags(trim($_POST[promotion]));
 	 $all = $class_coupon->getAll("code='".$promotion."' AND start_date<=CURDATE() AND end_date>=CURDATE() AND status=1");
      $one = $all[0];
-	 if($one[percent]!='' && $one[percent]>0){ 
+	 if($one[percent]!='' && $one[percent]>0){
 	 	 if($one[length]>1){
-		 	$msg = '<span style="color:green">Submit successful! This coupon discount '.$one[percent].'%, your ad length is '.$one[length].' months text ads.</span>';	
+		 	$msg = '<span style="color:green">Submit successful! This coupon discount '.$one[percent].'%, your ad length is '.$one[length].' months text ads.</span>';
 			 $_SESSION[length] = $one[length];
 			 $_SESSION[ref_code] = $one[ref_code];
 		 }else
-		 	$msg = '<span style="color:green">Submit successful! TextLink discount <b>$'.$totalPrice*($one[percent]/100).'</b> with this Coupon.</span>';		
-			$_SESSION[couponPrice] = $one[percent]/100;	
-			$_SESSION[ref_code] = $one[ref_code];	 
+		 	$msg = '<span style="color:green">Submit successful! TextLink discount <b>$'.$totalPrice*($one[percent]/100).'</b> with this Coupon.</span>';
+			$_SESSION[couponPrice] = $one[percent]/100;
+			$_SESSION[ref_code] = $one[ref_code];
 	 }else{
 		 unset($_SESSION[couponPrice]);
 		 unset($_SESSION[length]);
@@ -56,7 +56,7 @@ if($_SESSION['couponPrice']>0)
 	if($_SESSION[length]>1){
 		$user_arr[discount] = $totalPrice*($_SESSION['couponPrice'])*$_SESSION[length];
 		$totalPrice = $_SESSION[length]*($totalPrice - $totalPrice*($_SESSION['couponPrice']));
-		$day = $_SESSION[length]*30;		
+		$day = $_SESSION[length]*30;
 		$end_date_renew = date('Y-m-d', strtotime('+'.$day.' day', strtotime($end_date)));
 	}
 	else{
