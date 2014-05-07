@@ -25,8 +25,7 @@
                 <h5>Quản lý quảng cáo</h5>
                 <ul>
                     <li {if $module_name == 'links'}class="menu-active"{/if}><a href="{$_config.www}/links" title="Quản lý Buylink">Quản lý Buylink</a></li>
-
-                    <li {if $module_name == 'managearticlelink'}class="menu-active"{/if}><a href="{$_config.www}/managearticlelink" title="Quản lý Buylink">Quản lý Link bán</a></li>
+                    <li {if $module_name == 'link-publishers.php'}class="menu-active"{/if}><a href="{$_config.www}/link-publishers.php" title="Quản lý Buylink đã bán">Quản lý Buylink đã bán</a></li>
                     <!--  <li {if $module_name == 'manage-group-buylink'}class="menu-active"{/if}><a href="{$_config.www}/manage-group-buylink" title="Quản lý Nhóm Buylink">Quản lý Nhóm Buylink</a></li>
                     <li {if $module_name == 'weblike'}class="menu-active"{/if}><a href="{$_config.www}/weblike" title="Quản lý Nhóm Buylink">Website ưa thích</a></li>
                   -->
@@ -40,6 +39,8 @@
                     <li {if $module_name == 'payment'}class="menu-active"{/if}><a href="{$_config.www}/payment" title="Nạp tiền">Nạp tiền</a></li>
                     <li {if $module_name == 'admoney-card.php'}class="menu-active"{/if}><a href="{$_config.www}/admoney-card.php" title="Nạp tiền từ coupon">Nạp tiền từ coupon</a></li>
                     <li {if $module_name == 'profile' &&  $page == 'transfer'}class="menu-active"{/if}><a href="{$_config.www}/profile?page=transfer" title="Chuyển tiền">Chuyển tiền</a></li>
+                    <li {if $module_name == 'withdraw-money.php'}class="menu-active"{/if}><a href="{$_config.www}/withdraw-money.php" title="Rút tiền">Rút tiền</a></li>
+                    <li {if $module_name == 'payouts'}class="menu-active"{/if}><a href="{$_config.www}/payouts" title="Lịch sử rút tiền">Lịch sử rút tiền</a></li>
                 </ul>
             </li>
             <li class="menu-contact">

@@ -5,6 +5,7 @@ require('classes/class_withdraw.php'); $class_withdraw = new Withdraw(); $smarty
 require('classes/class_advertisersinfo.php'); $cls_advertisersinfo = new Advertisersinfo(); $smarty->assign('cls_advertisersinfo', $cls_advertisersinfo);	
 require('classes/class_user.php'); $cls_user = new User(); $smarty->assign('cls_user', $cls_user);
 require('classes/class_publishersinfo.php'); $cls_Publishersinfo = new Publishersinfo();
+include_once("global.php");
 $smarty->assign('cls_Publishersinfo', $cls_Publishersinfo);
 
 $smarty->assign('yes', 0);

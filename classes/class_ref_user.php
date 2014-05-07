@@ -52,6 +52,7 @@ class RefUser extends dbBasic{
 		if($userId<=0) return false;
 		if($ref_code){
 			$adver_earnings = 0;
+			//echo 'SELECT price, coupon_price, coupon_length FROM advertisersinfo WHERE ref_code=\'' . $ref_code . '\' and is_paid= \'Y\'';
 			$res_adv = mysql_query('' . 'SELECT price, coupon_price, coupon_length FROM advertisersinfo WHERE ref_code=\'' . $ref_code . '\' and is_paid= \'Y\'');
 			while ($row = mysql_fetch_assoc($res_adv)) {				
 				if($row[coupon_price]>0 && $row[coupon_length]>1)
@@ -89,7 +90,7 @@ class RefUser extends dbBasic{
 		if(!$ref_val)
 		$ref_val = $this->getReferFromUserId($userId);
 		$affiliate = array();
-		
+
 		$affiliate[advertiser] =0; $affiliate[publisher] = 0;
 		if($ref_val && $ref_val!=''){			
 			$res = mysql_query('' . 'select pub_money, admin_tranfer_aff_date, uid from users where ref_code=\'' . $ref_val . '\' ');

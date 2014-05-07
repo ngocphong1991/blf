@@ -7,6 +7,8 @@ require('classes/class_transection.php'); $cls_transection = new Transection(); 
 
 require('classes/class_ref_user.php'); $cls_ref_user = new RefUser(); $ref_val = $cls_ref_user->get_my_ref();
 
+include_once("global.php");
+
 $affiliate_earnings=0; $affiliate_earnings = $cls_ref_user->getAffiliateEarning($_SESSION[uid]);
 if($_SESSION['uid'] == '' or !$cls_user->is_publishers($_SESSION['uid'])) header('location: '.$_config[www]);
 
@@ -38,7 +40,7 @@ if(count($error)==0 && $money>0 && $money <= $one['pub_money']){
 if($money>0 && $res){
 		$cls_user->WithDraw($money);
 		$color ='green';
-		$error[] = "Yêu cầu rút tiền của bạn đã được gửi tới ban quản trị. Chúng tôi sẽ tiến hành thanh toán trong tuần đầu tiên của tháng kế tiếp.";
+		$success = "Yêu cầu rút tiền của bạn đã được gửi tới ban quản trị. Chúng tôi sẽ tiến hành thanh toán trong tuần đầu tiên của tháng kế tiếp.";
 		}
 	}
 }
@@ -51,12 +53,13 @@ elseif($payment_method=='1' && $_SESSION[uid]){
 		if($money>0 && $res)
 		$cls_user->WithDraw($money);
 		$color ='green';
-		$error[] = "Update successful we will transfer money to you in 24 hours.";
+        $success = "Update successful we will transfer money to you in 24 hours.";
 	}
 }
 
 $smarty->assign('color',$color);
 $smarty->assign('error',$error);
+$smarty->assign('success',$success);
 }
 $my_profile = $cls_user->getOne($_SESSION['uid']);
 $smarty->assign('my_profile', $my_profile);

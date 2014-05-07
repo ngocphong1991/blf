@@ -842,7 +842,7 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
     .left-slider .menu-block .menu-left-wrap .menu-level-1{ width: 220px; float: left}
     .left-slider .menu-block .menu-left-wrap .menu-level-1.col2{position: absolute; left: 266px}
     .left-slider .menu-block .menu-left-wrap .menu-level-1.col-center{clear: both}
-    .except{width: 100%; min-height: 300px}
+    .except{width: 100%; min-height: 350px}
     .menu-contact{width: 215px; position: absolute; right: 0; margin-top: 0}
     .paper{background: #ffffff}
 }

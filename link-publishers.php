@@ -1,5 +1,6 @@
 <?php
 include ("include/config.php");
+include_once("global.php");
 $msg = "";
 
 $userId = intval($_SESSION[uid]);
@@ -13,6 +14,7 @@ if($order_id<=0 && $adv_id>0) $order_id = $adv_id;
 require('classes/class_advertisersinfo.php'); $cls_advertisersinfo = new Advertisersinfo();
 
 if(isset($order_id) && $order_id>0){ $where = 'adv_id = '.$order_id; } else $where = 'is_paid="Y"';
+
 if(isset($_POST[update]) && $_POST[link_text] && ($_POST[order_id]>0)){
 	$key = $_POST[order_id];
   	$value = "ad_des='".stripslashes($_POST['link_text'])."'";
