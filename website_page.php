@@ -92,7 +92,7 @@ include ("include/config.php");
 			
 				$arr_merge2 = array_merge(get_website_details('img_ad',$_GET[pid]), get_website_details('ppc_img_ad',$_GET[pid]) );
 				$smarty->assign('iad_rates', $arr_merge2);
-				//print_r($arr_merge2);
+
 				//$smarty->assign('ppc_iad_rates', get_website_details('ppc_img_ad',$_GET[pid]));			
 				
 				$arr_merge3 = array_merge(get_website_details('vdo_ad',$_GET[pid]), get_website_details('ppc_vdo_ad',$_GET[pid]));

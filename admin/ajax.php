@@ -52,19 +52,16 @@ if(isset($_GET[q])) {
         $adv_info = $cls_advertisersinfo->getOne($adv_id);
         $start_date = $adv_info["start_date"];
          $end_date = $adv_info["end_date"];
-          //echo $value;
+
           $date1 = date('Y-m-d');
           $date3 = strtotime($date1)-strtotime($start_date);
           $_days=24*60*60;
-          //echo $start_date;
           $days = $date3-($date3%$_days);
           $days=$days/$_days;
 
           $start_date = date('Y-m-d', strtotime('+'.$days.' day', strtotime($start_date)));
-         //echo $start_date;
 
           $end_date = date('Y-m-d', strtotime('+'.$days.' day', strtotime($end_date)));
-          //echo $end_date;
           $value = "start_date='".$start_date."',end_date='".$end_date."' ";
 
           $cls_advertisersinfo->updateOne($adv_id, $value);

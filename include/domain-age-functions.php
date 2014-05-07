@@ -2,7 +2,6 @@
 //@ function check VietNam Domain Age
 //@ Return timestamp
 //$domain_age = getDomainAge('cab.vn');
-//echo timeAgo($domain_age);
 
 function getDomainName($domain, $type='ext'){
 	$true = getTrueDomain($domain);

@@ -18,14 +18,14 @@ require('classes/class_country.php'); $cls_country = new Country(); $smarty->ass
 						$msg = 'Your account is suspended. Please contact with the admin.';
 					elseif ($u_stat == 'ok') {
 						if($_POST[red_url]!="")
-							header("location: ".$_POST[red_url]);
-						else header("location: ".$_config[www]."/marketplace");
+                            echo '<script type="text/javascript">window.location.href = "'.$_POST[red_url].'";</script>';
+						else echo '<script type="text/javascript">window.location.href = "'.$_config[www].'/marketplace";</script>';
 						}
 					else
 						$msg = 'User name & Password does not match';
 				}
 			}
-			
+
 			if(isset($_GET[reset_password]) && !isset($_SESSION[uid])) {	
 				require_once('classes/class_user.php');
 				$cls_user = new User();		
@@ -49,7 +49,7 @@ require('classes/class_country.php'); $cls_country = new Country(); $smarty->ass
 							$msg = "The passwords you typed do not match";
 					}				
 				}
-				//echo $msg;
+
 				$smarty->assign('msg',$msg);
 				$smarty->assign('reset_password',1);
 			}
@@ -81,7 +81,7 @@ Click the link below to confirm that you wish your password reset.<br><br>
   <u>support@textlink.vn</u> <br />
   <u>http://textlink.vn</u> <br />
   117 Tran Duy Hung&nbsp; Street &nbsp; | &nbsp; 17th Floor Charmvit  Tower&nbsp; | &nbsp; Hanoi | &nbsp; (04).62698999 | &nbsp;&nbsp;<u><a href="$_config[www]">Textlink.vn</a></u> <br />
-  &copy; 2012 Textlink.vn .  All rights reserved.</p>
+  &copy; 2012 Buylink .  All rights reserved.</p>
   </body>
 </html>
 EOF;

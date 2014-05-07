@@ -8,7 +8,6 @@ $cls_user = new User();
 // multiple recipients
 $arr_urr = getListAds();
 
-//print_r($arr_urr);
 if(count($arr_urr)>0)
 $arr_user = getFileContent($arr_urr);
 
@@ -26,9 +25,7 @@ function getFileContent($arr_urr){
 		$pieces_url = explode("/", $ad_url);
 		if(is_array($pieces_url))
 		$ad_url = $pieces_url[0];
-		
-		//echo $ad_url;		
-		//$key = array_search('sdfsd', $array);
+
 		if(strpos($content, $ad_url)!==false){
     		echo $ad_url.'có tồn tại trong'.$url['url'];
 			echo '<br>';

@@ -33,8 +33,6 @@ $_xml .= "<Links>\n";
 $_xml .= "<Link>\n";
 if($advertise_avaiable){
 	$sql_advertise = "select distinct advertisersinfo.adv_id, advertisersinfo.pid, advertisersinfo.ad_url, advertisersinfo.ad_des,advertisersinfo.ad_before,advertisersinfo.ad_after, advertisersinfo.end_date from publishersinfo, advertisersinfo where publishersinfo.script='".$script."' and publishersinfo.pid=advertisersinfo.pid and advertisersinfo.is_paid='Y' and advertisersinfo.start_date<=CURDATE() and advertisersinfo.end_date>=CURDATE() ";
-	//echo $sql_advertise;
-	//echo $sql_advertise;
 	$sql_adv_obj = mysql_query($sql_advertise);		
 	if(mysql_num_rows($sql_adv_obj)) {
 		while ($row = mysql_fetch_assoc($sql_adv_obj)) {

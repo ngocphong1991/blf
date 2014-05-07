@@ -28,7 +28,6 @@ if(!isset($_SESSION[uid]) || $_SESSION[uid]<=0) exit();?>
 	$counter=0;
 	while($row = mysql_fetch_assoc($adv_payment)) {	
 		$info_site = mysql_query('select websitename from publishersinfo where pid='.$row[pid]);
-		//echo 'select websitename, set_price from publishersinfo where pid='.$row[pid];
 		$web_name = mysql_result($info_site, 0, 'websitename');
 		if($_SESSION[length]>1 && $_SESSION[couponPrice]>0)
 			$price = ($row[price] - $row[price]*$_SESSION[couponPrice])*$_SESSION[length];

@@ -65,7 +65,7 @@ function totalEarning(){
 	$year = isset($_GET[year])?intval($_GET[year]):date('Y');
 	
 	$start = $year."-".$month."-01";
-	//echo $date_now;
+
 	if($_SESSION[uid]>0){
 		$slq ="select publishersinfo.pid, publishersinfo.uid, publishersinfo.set_price, publishersinfo.is_manual, advertisersinfo.start_date,advertisersinfo.ad_des, advertisersinfo.ad_url,advertisersinfo.money_sent_to_pub, advertisersinfo.end_date, advertisersinfo.adv_id, advertisersinfo.is_auth, advertisersinfo.end_date from publishersinfo LEFT JOIN (advertisersinfo) ON (advertisersinfo.pid = publishersinfo.pid) where advertisersinfo.pub_uid=".$_SESSION[uid]." and advertisersinfo.is_paid='Y' and  advertisersinfo.start_date <= SUBDATE(CURDATE(), 30) ";
 		$order_by = " order by update_status DESC";
@@ -79,7 +79,6 @@ function totalEarning(){
 				$arr_pub[total] +=  $row[set_price];
 			}else continue;
 		}
-		//print_r($arr_pub);
 		//$smarty->assign('arr_pub',$arr_pub);		
 		return $arr_pub;
 	}

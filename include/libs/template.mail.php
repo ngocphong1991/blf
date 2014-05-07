@@ -19,8 +19,8 @@ global $_config;
   Thông tin liên lạc<br />
   <u>support@textlink.vn</u> <br />
   <u>http://textlink.vn</u> <br />
-  Tầng 15, tòa nhà Charmvit Tower&nbsp;|117 Trần Duy Hưng, Hà Nội | &nbsp; (04).62698999 | &nbsp;&nbsp;<u><a href="$_config[www]">Textlink.vn</a></u> <br />
-  &copy; 2012 Textlink.vn .  All rights reserved.</p>
+  Tầng 15, tòa nhà Charmvit Tower&nbsp;|117 Trần Duy Hưng, Hà Nội | &nbsp; (04).62698999 | &nbsp;&nbsp;<u><a href="$_config[www]">Buylink</a></u> <br />
+  &copy; 2012 Buylink .  All rights reserved.</p>
   </body>
 </html>
 EOF;
@@ -30,7 +30,7 @@ $message = <<<EOF
 <html>
   <body bgcolor="#DCEEFC">Xin Chào <strong> $to_username </strong>,
 <br />
-<br />Cảm ơn bạn đã đăng ký trở thành Advertiser của Textlink.vn. Với một Marketplace bao gồm rất nhiều website chất lượng, Textlink sẽ đem đến cho bạn cơ hội để xây dựng liên kết chất lượng cao, cải thiện thứ hạng từ khóa và mang lại lượng truy cập lớn cho website của bạn..:&nbsp;<br />
+<br />Cảm ơn bạn đã đăng ký trở thành Advertiser của Buylink. Với một Marketplace bao gồm rất nhiều website chất lượng, Buylink sẽ đem đến cho bạn cơ hội để xây dựng liên kết chất lượng cao, cải thiện thứ hạng từ khóa và mang lại lượng truy cập lớn cho website của bạn..:&nbsp;<br />
 <br />
 Quảng cáo Text Link - là hình thức quảng cáo phổ biến thường xuất hiện ở bên trái hay bên phải hoặc ở dưới chân trang trên các website .&nbsp;<br />
 <br />
@@ -58,11 +58,11 @@ EOF;
 		  <br>
 		  Chúc mừng website:&nbsp;<a href="$publisher_arr[url]" target="_blank">$publisher_arr[url]</a> của bạn đã được submit thành công.<br>
 		  <br>
-		  Ngay bây giờ bạn có thể &nbsp;<a href="http://textlink.vn/publishers.php?pid=$publisher_arr[pid]&do=edit" target="_blank">vào đây</a>&nbsp;page để chỉnh sửa thông tin và tải mã code quảng cáo.</p> <br>
+		  Ngay bây giờ bạn có thể &nbsp;<a href="$_config[www]/publishers.php?pid=$publisher_arr[pid]&do=edit" target="_blank">vào đây</a>&nbsp;page để chỉnh sửa thông tin và tải mã code quảng cáo.</p> <br>
 		 <strong>Chú ý rằng:</strong> </p><br>
 		<ul>
 		  <li>Để website của bạn luôn xuất hiện trên marketplace của chúng tôi, bạn phải cài đặt và duy trì code trên website của ban (Cài đặt code của textlink.vn không ảnh hưởng gì tới wesbite và quảng cáo chỉ hiện khi advertiser order link quảng cáo trên site của bạn).</li>
-		  <li>Sau khi submit website thành công bạn có thể chỉnh sửa và cập nhật thông tin cho nó ở đây: at&nbsp;<a href="http://textlink.vn/publishers.php?step=1" target="_blank">$_config[www]/r/publisher/list_sites</a> </li>
+		  <li>Sau khi submit website thành công bạn có thể chỉnh sửa và cập nhật thông tin cho nó ở đây: at&nbsp;<a href="$_config[www]/publishers.php?step=1" target="_blank">$_config[www]/r/publisher/list_sites</a> </li>
 		</ul>
 		<p><br>
 		  Hãy&nbsp;<a href="$_config[www]/publishers.php?step=1" target="_blank">cài đặt code</a>&nbsp;ngày bây giờ để kiếm tiềm với hệ thống hoàn toàn tự động của chúng tôi. Lưu ý rằng vị trí bạn đặt link quảng có có thể ảnh hưởng tới giá cả và sự hấp đẫn của link đối với Advertiser.&nbsp; <br>
@@ -74,7 +74,7 @@ EOF;
 		  <u>support@textlink.vn</u> <br>
 		  <u>http://www.textlink.vn</u> <br>
 		  Tầng 15, Tòa nhà Charmvit Tower | 117 Trần Duy Hưng, Hà Nội | &nbsp; &lt;(04).62698999&gt; | &nbsp;<a href="$_config[www]/" target="_blank">Textlink.vn</a> <br>
-		  &copy; 2012 Textlink.vn .  All rights reserved.</p>
+		  &copy; 2012 Buylink .  All rights reserved.</p>
   </body>
 </html>
 EOF;
@@ -92,14 +92,14 @@ $message = <<<EOF
   Nếu đây là lỗi thì hay click<a href="$_config[www]/marketplace/">vào đây</a> để đặt mua lại link quảng cáo. Chúng tôi luôn sẵn lòng phục vụ bạn!.<br />
   Nếu bạn không hài lòng với bất kỳ dịch vụ nào của Text link, Vui lòng xin liên hệ với chúng tôi để có giải pháp tốt nhất. Textlink đem đến cho bạn rất nhiều <a href="$_config[www]/marketplace">sự lựa chọn!</a><br />
   <br />
-  Rất cảm ơn bạn đã quan tâm tới sản phẩm của Textlink!<br />
+  Rất cảm ơn bạn đã quan tâm tới sản phẩm của Buylink!<br />
   <br />
   Thông tin hỗ trợ <br />
   <strong>Textlink.vn</strong><br />
   <u>support@textlink.vn</u> <br />
   <a href="$_config[www]">$_config[www]</a><u> </u><br />
   Tầng 15, Tòa nhà Charmvit Tower &nbsp;| 117 Trần Duy Hưng, Cầu Giấy, Hà Nội |&nbsp;04.62698999 |&nbsp;<a href="$_config[www]" target="_blank">Textlink.vn</a> <br />
-  &copy; 2012 Textlink.vn.  All rights reserved.</p>
+  &copy; 2012 Buylink.  All rights reserved.</p>
   </body>
 </html>
 EOF;
@@ -161,7 +161,7 @@ $message = <<<EOF
 <html>
   <body bgcolor="#DCEEFC"><p>Xin Chào,<br />
   <br />
-  Cảm ơn bạn đã đặt mua link trên Textlink.vn! Chúng tôi rất vui lòng được giải đáp các thắc mắc của bạn về các dịch vụ của Textlink. Hãy <a href="mailto:$_config[admin_email]">liên hệ với cúng tôi</a> nếu bạn có bất kỳ câu hỏi nào! Sau đây là thông tin chi tiết về đơn đặt hàng của bạn:<br />
+  Cảm ơn bạn đã đặt mua link trên Buylink! Chúng tôi rất vui lòng được giải đáp các thắc mắc của bạn về các dịch vụ của Buylink. Hãy <a href="mailto:$_config[admin_email]">liên hệ với cúng tôi</a> nếu bạn có bất kỳ câu hỏi nào! Sau đây là thông tin chi tiết về đơn đặt hàng của bạn:<br />
   <strong>Order $user_arr[order_id]</strong><br />
   <strong>Tên:<strong> $to_username<br />
   <strong>Địa Chỉ:<strong> $user_arr[address]<br />
@@ -188,9 +188,9 @@ $message = <<<EOF
   <br />
   <strong>Textlink.vn</strong><br />
   <u>support@textlink.vn</u> <br />
-  <a href="http://www.textlink.vn">http://www.textlink.vn</a><u> </u><br />
+  <a href="$_config[www]">$_config[www]</a><u> </u><br />
   Tầng 15, Tòa nhà Chamvit Tower | 117 Trần Duy Hưng, Cầu Giấy, Hà Nội |&nbsp;04.62698999 |&nbsp;<a href="$_config[www]/" target="_blank">Textlink.vn</a> <br />
-  &copy; 2012 Textlink.vn.  All rights reserved.</p>
+  &copy; 2012 Buylink.  All rights reserved.</p>
   </body>
 </html>
 EOF;

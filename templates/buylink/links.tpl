@@ -10,6 +10,8 @@
 {if $edit}
     <div class="right-inner">
         <h4 class="border-bold super-bold">Quản lý link </h4>
+        {if $msg}<div class="alert-success alert">{$msg}</div>{/if}
+        {if $err}<div class="alert-danger alert">{$err}</div>{/if}
         <form method="get" id="marketplaceFilter" class="form-horizontal">
             <table class="table table-striped links">
                 <thead>
@@ -61,10 +63,6 @@
                 </div>
             </div>
         </form>
-        <div class="form-group">
-            <p>{$msg}</p>
-        </div>
-
     </div>
 {else}
     <div class="right-inner">

@@ -29,11 +29,6 @@ function getPageRank($domain){
 	
 }
 
-
-
-
-
-
 $url = isset($_GET[url])?$_GET[url]:'dantri.com.vn';
 	$ar = alexarank ($url);
 	echo "Alexa: <b>".$ar."</b>";
@@ -42,13 +37,6 @@ $url = isset($_GET[url])?$_GET[url]:'dantri.com.vn';
    
 	echo "Pagerank: ".$Rank."</b>";
 	echo "<br>";
-	
-	//echo "abc".$url."abc";
-	
-	
-	//$domain_age = getDomainAge($url);
-	//echo $domain_age;
-	//echo timeAgo($domain_age);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -104,10 +104,10 @@ if($_POST['info']) {
 if($_GET['act']=='pay') {
     if($totalPrice<=$yourMoney) {		
 		$day_length = ($_SESSION[length]>1)?($_SESSION[length]*30):30;
-        if($cls_advertisersinfo->setPaid($day_length, $_SESSION[start_date])) {			
-            if($cls_user->minusMoney($_SESSION['uid'], $totalPrice)) {				 
-				//send mail		
-				include_once("include/libs/template.mail.php");				
+        if($cls_advertisersinfo->setPaid($day_length, $_SESSION[start_date])) {
+            if($cls_user->minusMoney($_SESSION['uid'], $totalPrice)) {
+				//send mail
+				include_once("include/libs/template.mail.php");
 				$type ="order";	
 				$to_email = $user_info[email];
 				$to_username = $user_info[username];	
@@ -117,7 +117,7 @@ if($_GET['act']=='pay') {
 				$user_arr[address] = $user_info[address];
 				$user_arr[city] = $user_info[city];
 				$user_arr[length] = $day_length;
-				
+
 				$adv_arr = array(); $publisher_arr = array();
 				foreach($allAdvertisersinfo as $key=>$ad_info){
 					//update coupon info
@@ -141,7 +141,8 @@ if($_GET['act']=='pay') {
 				unset($_SESSION['start_date']);
                 $_SESSION['totalPrice'] = $totalPrice;
                 $_SESSION['yourMoney'] = $yourMoney;
-                header("location: ?act=paysuccess&price=".$totalPrice);
+
+                echo '<script type="text/javascript">window.location.href = "'.$_config[www].'/cart?act=paysuccess&price='.$totalPrice.'";</script>';
             }
             else die('Error');
         } else die('Error!');

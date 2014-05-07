@@ -147,7 +147,7 @@ $y = (int)$x;
 if($y==-$z&&$x<-$z){
 $y = (int)((-1)*$x);// this is the hack, make it positive before
 $y = (-1)*$y; // switch back the sign
-//echo "int hack <br>";
+
 }
 $x = $y;
 }

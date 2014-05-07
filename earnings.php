@@ -23,12 +23,11 @@ if($_SESSION['utype'] != 'pub+adv'){
 function getSiteEarnling(){
 
 	if(isset($_GET['pid']) && $_SESSION[uid]>0){
-		//echo "SELECT SUM(earnings) AS money FROM earnings WHERE uid='$_SESSION[uid]' AND pid='$_GET[pid]'";
+
 		$my_site_earnings = mysql_query("SELECT SUM(earnings) AS money FROM earnings WHERE uid='$_SESSION[uid]' AND pid='$_GET[pid]'");
 
 		if (mysql_num_rows($my_site_earnings)) {
 			$my_site_money = mysql_result($my_site_earnings, 0, 'money');
-			//echo    $my_site_money;
 			return my_money_format('%i', $my_site_money);
     	} 
 	

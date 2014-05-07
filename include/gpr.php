@@ -3,7 +3,6 @@ include("pr.php");
 $gpr = new pageRank();
 $gpr->printrank("http://www.yahoo.com");
 //display image
-//echo $gpr->get_pr();
 ?>
 
 <!-- RankWidget.com Google PageRank script -->

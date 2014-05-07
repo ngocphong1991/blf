@@ -21,13 +21,11 @@ if($_SESSION[uid]>0){
 	$smarty->assign('total_earnings',my_money_format('%i', $user_info[pub_money]));
 	
 	$smarty->assign('user_info', $user_info);
-	//print_r($user_info);
 }
 
 if(connect_memcache()){
 	global $Cache;
 	//$Cache->set('tienpv', 1000);
-	//echo $Cache->get('tienpv');
 }
 function connect_memcache(){
 	global $Cache;	
@@ -40,8 +38,6 @@ function connect_memcache(){
 		return false;
 	}
 	return true;
-
-return false;
 }
 
 function getMyAdvertiser(){

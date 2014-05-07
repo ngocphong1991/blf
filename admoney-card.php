@@ -20,25 +20,24 @@ if($_POST['charge']=='1'){
 		
 		$ref_code  = isset($_POST[ref_code])?addslashes($_POST[ref_code]):'';
 		if($ref_code){
-			//echo '' . 'SELECT coupon_card_id, user_id FROM coupon_card WHERE ref_code=\'' . $ref_code . '\' LIMIT 1';
 			
 			$res = mysql_query('' . 'SELECT coupon_card_id,total, user_id FROM coupon_card WHERE ref_code=\'' . $ref_code . '\' LIMIT 1');
-			
+
 			if (mysql_num_rows($res)) {             
 				$coupon_card_id      = mysql_result($res, 0, 'coupon_card_id');
 				$total      = mysql_result($res, 0, 'total');
-				$user_id      = mysql_result($res, 0, 'user_id');	
-				//echo $total;
+				$user_id      = mysql_result($res, 0, 'user_id');
+
 				if($coupon_card_id>0 && $total>0 && $user_id==0){
 					$cls_coupon_card->updateOne($coupon_card_id, "user_id=".$_SESSION[uid]."");
 					$cls_user->plusMoney($_SESSION[uid], $total);
-					$smarty->assign('msn','<span tyle="color:green">Nạp tiền từ tài tài khoản thẻ TextLink thành công, cảm ơn bạn đã sử dụng dịch vụ của TextLink!.</span>');
+					$smarty->assign('msn','Nạp tiền từ tài tài khoản thẻ TextLink thành công, cảm ơn bạn đã sử dụng dịch vụ của TextLink!.');
 				}else
-				$smarty->assign('msn','<span style="color:red">Mã này đã được nạp bởi user khác hoặc không tồn tại, bạn vui lòng thử lại.</span>');
-			}else 
-				$smarty->assign('msn','<span style="color:red">Mã này đã được nạp bởi user khác hoặc không tồn tại, bạn vui lòng thử lại.</span>');
+				$smarty->assign('error','Mã này đã được nạp bởi user khác hoặc không tồn tại, bạn vui lòng thử lại.');
+			}else
+				$smarty->assign('error','Mã này đã được nạp bởi user khác hoặc không tồn tại, bạn vui lòng thử lại.');
 		}else
-			$smarty->assign('msn','<span style="color:red">Vui lòng nhập mã thẻ TextLink.</span>');	  
+			$smarty->assign('error','Vui lòng nhập mã thẻ TextLink.');
 }
 
 $content = $smarty->fetch('admoney_card.tpl');

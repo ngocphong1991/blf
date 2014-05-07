@@ -282,8 +282,6 @@ class K2 {
 		// How to style sidebars, and ehther to use K2's CSS at all
 		update_option('k2usestyle', $_POST['k2']['usestyle']);
 
-		/* print_r($_POST); */
-
 		// Archives Page (thanks to Michael Hampton, http://www.ioerror.us/ for the assist)
 		if ( isset($_POST['k2']['archives']) ) {
 			update_option('k2archives', '1');

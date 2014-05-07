@@ -1317,8 +1317,6 @@ function checkIssetUrl($url)
 	
 	$page=curl_exec($ch);
 	
-	//echo curl_error($ch);
-	
 	$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 	
 	curl_close($ch);

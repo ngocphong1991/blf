@@ -52,10 +52,10 @@ if($_GET['keywords']!='Nhập từ khóa cần tìm' && $_GET['keywords']!='')  
 		$value .= ",update_time='".time()."'";
 		//$value .= ",ad_url='".$val['ad_url']."'";
 		$advertiser_info = $cls_advertisersinfo->getOne($key);
-		if(date('m') == date("m", $advertiser_info[update_time])){ $msg = '<span style="color:red">You cannot update advertise link two times per month.</span>' ;}
+		if(date('m') == date("m", $advertiser_info[update_time])){ $smarty->assign('err', 'You cannot update advertise link two times per month.');}
 		else{
 			$cls_advertisersinfo->updateOne($key, $value);
-			 $msg = '<span style="color:geen">Update successful.</span>' ;
+			 $msg = 'Update successful.' ;
 		}
 	}
 	$all = getListOrder($order_id, $userId,$buying_date,$end_date,$keywords,'active');
@@ -102,8 +102,6 @@ if(isset($status) and $status == 'active'){
 if(isset($keywords) and $keywords){
     $tlwhere .= " AND (advertisersinfo.ad_des like '%$keywords%' or advertisersinfo.ad_url like '%$keywords%')";
 }
-    //echo "select publishersinfo.pid, publishersinfo.url, publishersinfo.websitename,publishersinfo.google_page_rank, publishersinfo.description, advertisersinfo.price, advertisersinfo.adv_id, advertisersinfo.ad_des, advertisersinfo.buying_date,advertisersinfo.end_date, advertisersinfo.ad_url from publishersinfo LEFT JOIN (advertisersinfo) ON (advertisersinfo.pid=publishersinfo.pid) ".$tlwhere." order by advertisersinfo.adv_id DESC ";
-//echo '<br/>';
 $list_order = mysql_query("select publishersinfo.pid, publishersinfo.url, publishersinfo.websitename,publishersinfo.google_page_rank, publishersinfo.description, advertisersinfo.price, advertisersinfo.adv_id, advertisersinfo.ad_des, advertisersinfo.buying_date,advertisersinfo.end_date, advertisersinfo.ad_url from publishersinfo LEFT JOIN (advertisersinfo) ON (advertisersinfo.pid=publishersinfo.pid) ".$tlwhere." order by advertisersinfo.adv_id DESC ");
 
 	while($r = @mysql_fetch_assoc($list_order)) {

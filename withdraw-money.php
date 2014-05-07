@@ -45,8 +45,7 @@ if($money>0 && $res){
 elseif($payment_method=='1' && $_SESSION[uid]){
 	if(!$email_paypal) $error[] = "Please enter your PayPal email address.";
 	if(count($error)==0 && $money>0 && ($money < $one['pub_money'])){
-		//echo '' . 'INSERT INTO `withdraw` ( `user_id` , `money` , `withdraw_date` , `method` , `name_card` ,`number_card`, `phone` , `email_paypal` , `email` , `name_bank` , `code`) VALUES (\'' . $_SESSION['uid'] . '\', \'' . $money . '\', curdate(), \'' . $payment_method . '\', \'' . $name_card . '\', \'' . $number_card . '\', \'' . $phone . '\', \'' . $email_paypal . '\', \'' . $email . '\', \'' . $name_bank . '\', \'' . $code . '\' )';
-		
+
 		$res = mysql_query('' . 'INSERT INTO `withdraw` ( `user_id` , `money` , `withdraw_date` , `method` , `name_card` ,`number_card`, `phone` , `email_paypal` , `email` , `name_bank` , `code`) VALUES (\'' . $_SESSION['uid'] . '\', \'' . $money . '\', curdate(), \'' . $payment_method . '\', \'' . $name_card . '\', \'' . $number_card . '\', \'' . $phone . '\', \'' . $email_paypal . '\', \'' . $email . '\', \'' . $name_bank . '\', \'' . $code . '\' )');
 		
 		if($money>0 && $res)

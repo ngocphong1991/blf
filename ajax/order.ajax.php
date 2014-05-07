@@ -54,7 +54,6 @@ if($_POST[action]=="cancel_link"){
 		$arr = array("result"=>"success","output"=> "Approved advertiser link successful.");
 		echo json_encode($arr);
 	}
-	//print_r($advertiser_info);	
 }elseif($_POST[action]=="advertiser_cancel"){
 	$url = isset($_POST[url])?$_POST[url]:'';
 	$adv_id = isset($_POST[id])?intval($_POST[id]):0;

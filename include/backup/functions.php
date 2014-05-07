@@ -553,8 +553,7 @@ function update_publisher($post_vars, $type="update") {
 		if($post["cats".$idx]>0)
 		$catIds .=  " , ".$post["cats".$idx];
 		else continue;
-	}    
-	//echo $catIds;
+	}
 	
    // $gpr = google_page_rank($post[url]);
   // echo '' . 'update `publishersinfo` set `websitename`=\'' . $post['wname'] . '\', `url`=\'' . $post['url'] . '\', `description`=\'' . $post['wdes'] . '\', `catid`=\'' . $post['cats'] . '\' , `subcatid`=\'' . $post['subcats'] . '\'  where uid=\'' . $_SESSION['uid'] . '\' and pid=\'' . $post['update_pid'] . '\'';
@@ -1106,7 +1105,7 @@ function timeAgo($timestamp, $granularity=2, $format='Y-m-d H:i:s'){
                                 $time = round($difference / $value);
                                 $difference %= $value;                              
                                 $output .= ($output ? ' ' : '').$time.' ';
-                                $output .= (($time > 1 && $key == 'ngày') ? $key.'s' : $key);                               
+                                $output .= (($time > 1 && $key == 'ngï¿½y') ? $key.'s' : $key);                               
                                 $granularity--;
                         }
                         if($granularity == 0) break;
@@ -1243,10 +1242,9 @@ class TextLink {
 		$result		= \'\';
 		$errorNum	= \'\';
 		$errorStr	= \'\';
-		//echo $this->feedUrl;
 		
 		$url = parse_url($this->feedUrl);
-		//print_r($url);
+
 		if ($handle = @fsockopen ($url[\'host\'], 80, $errorNum, $errorStr, $this->timeout))
 		{
 			

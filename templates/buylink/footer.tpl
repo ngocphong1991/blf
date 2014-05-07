@@ -1,9 +1,9 @@
 <!-- FOOTER -->
 <div class="doitac hidden-xs">
-    <img alt="đối tác" src="{$template_dir}/images/doi-tac.png">
+   <div class="inner-doitac">&nbsp;</div>
 </div>
 <div class="doitac hidden-sm hidden-md hidden-lg">
-    <img alt="đối tác" src="{$template_dir}/images/responsive/doi-tac.png">
+    <div class="inner-doitac">&nbsp;</div>
 </div>
 <div class="footer">
     <div class="container">

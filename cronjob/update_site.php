@@ -7,8 +7,6 @@ function checkupdate_publisher(){
 		
 		$sql_adv_obj = mysql_query($res_date);		
 		while ($row = mysql_fetch_assoc($sql_adv_obj)) {
-			print_r($row);			
-		
 			echo 'update<br>';
 			echo '' . 'update `publishersinfo` set  `status`=\'1\'  where pid=\'' . intval($row[pid]) . '\'';
 			mysql_query('' . 'update `publishersinfo` set  `status`=\'1\'  where pid=\'' . intval($row[pid]) . '\'');

@@ -193,10 +193,10 @@
                             </td>
                             <td width="65%">
                                 <div class="col-sm-12">
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-5 col-xs-5">
                                         <input size="16" onblur="if(this.value=='') this.value='Điền mã coupon'" onfocus="if(this.value=='Enter code here') this.value=''" value="Enter code here" name="promotion" style="color: rgb(136, 136, 136);" class="txt2" type="text">
                                     </div>
-                                    <div class="col-sm-7">
+                                    <div class="col-sm-7 col-xs-7">
                                         <button class="button red">Submit</button>
                                     </div>
                                 </div>
@@ -206,7 +206,7 @@
                     </table>
                 </form>
             </div>
-            <div class="row"> <a href="{$_config.www}/payment" class="button blue-bold">Nạp Tiền</a> <a class="button blue-bold" href="{$_config.www}/cart/?act=pay">Thanh Toán</a> </div>
+            <div class="row"> <a href="{$_config.www}/payment" class="button blue-bold">Nạp Tiền</a> <a class="button blue-bold" href="{$_config.www}/cart?act=pay">Thanh Toán</a> </div>
         </div>
     {/if}
     {if $act=='paysuccess'}

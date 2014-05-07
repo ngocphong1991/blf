@@ -10,8 +10,7 @@ if(!isset($_SESSION[uid])){
 //@ get lastest order
 function getListOrders(){
 	if(!$_SESSION[uid]) return false;
-	
-	//echo "SELECT * FROM advertisersinfo WHERE uid = '$_SESSION[uid]' and is_paid ='Y' ORDER BY pid DESC";	
+
 	$lastest_order = mysql_query("SELECT * FROM advertisersinfo WHERE uid = '$_SESSION[uid]' and is_paid ='Y' ORDER BY adv_id DESC");	
 	while($r = @mysql_fetch_assoc($lastest_order)) {
 		$lastest_order_arr[] = array('pid'=>$r['pid'], 'adv_id'=>$r['adv_id'], 'ad_des'=>$r['ad_des'],'req_date'=>$r['req_date'],'buying_date'=>$r['buying_date'], 'ad_url'=>$r['ad_url'], 'price'=>my_money_format('%i', $r['price']));		

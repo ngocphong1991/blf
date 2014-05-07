@@ -148,7 +148,7 @@
                     <td class="alignleft">{$www[num].date}</td>
                     <td class="alignright large bold green">{$www[num].set_price}</td>
                     <td class="centered last"><a href="publishers.php?pid={$www[num].pid}&do=edit" class="btn-tan-80">Edit</a>
-                    <a href="earnings.php?pid={$www[num].pid}" style="margin-top: 5px;" class="btn-tan-80">Earnings</a></td>
+                    <!--<a href="earnings.php?pid={$www[num].pid}" style="margin-top: 5px;" class="btn-tan-80">Earnings</a>--></td>
                     </tr>
                     {/if}
                     {/section}

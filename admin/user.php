@@ -17,7 +17,6 @@ $cons = '1=1 ';
     $cons .= " and username like '%".$_GET['keyword']."%' ";
     $smarty->assign('keyword', $_GET['keyword']);
 }
-//echo $cons;
 $all_user = $cls_user->getListPage($cons);
 $smarty->assign('all_user', $all_user);
 $paging = $cls_user->getNavPage($cons);

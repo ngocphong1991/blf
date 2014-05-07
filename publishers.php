@@ -110,14 +110,11 @@ $smarty->assign('right_panel','off');
 if($do=='edit'){
     $res3 = mysql_query("SELECT * FROM publishersinfo WHERE uid='$_SESSION[uid]' AND pid='$_GET[pid]'");
     if(!mysql_num_rows($res3)) header("location: publishers.php");
-	if (isset($_POST['download_script'])) { 
-		//echo $_POST['script_type'];
+	if (isset($_POST['download_script'])) {
 		$domain = getDomainName($_POST['url'],'domain');
 		$scrip_name = str_replace('.', '_', getTrueDomain($domain));
 		$scirpt_file = strtolower("ad_files/".$scrip_name.".php");
 		$my_file = fopen($scirpt_file, 'w') or die("can't open file");
-		//$my = script_content($_POST['script']);
-
 		fwrite($my_file, script_content($_POST['script'], $_config['www'], $_POST['script_type']));
 		fclose($my_file);
 

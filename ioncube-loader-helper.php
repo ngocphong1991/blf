@@ -441,9 +441,6 @@ function rtl_tester()
 	}
 	else
 	{
-
-		//echo "${nl}Please send the output of this script to $email if you have questions or require further assistance.$nl$nl";
-
 		$body = "<center><h2>Run-Time Loading Installation Instructions</h2></center>"
 		.		"<h3>Testing Server</h3>"
 		.		"$working"

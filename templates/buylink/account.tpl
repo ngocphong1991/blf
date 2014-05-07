@@ -82,15 +82,15 @@
                                 <div class="message-error"><span>{$msg}</span></div>
                             {/if}
                             <div class="form-group" >
-                                <label for="username" class="col-sm-3 control-label">Username <span>*</span></label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="col-sm-4 required" value="" id="username"  name="username" >
+                                <label for="username" class="col-sm-3 col-xs-3 control-label">Username <span>*</span></label>
+                                <div class="col-sm-9 col-xs-9">
+                                    <input type="text" class="col-sm-4 col-xs-4 required" value="" id="username"  name="username" >
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="password" class="col-sm-3 control-label">Password <span>*</span></label>
-                                <div class="col-sm-9">
-                                    <input type="password" class="col-sm-4 required" value="" id="password"  name="pass" >
+                                <label for="password" class="col-sm-3 col-xs-3 control-label">Password <span>*</span></label>
+                                <div class="col-sm-9 col-xs-9">
+                                    <input type="password" class="col-sm-4 col-xs-4 required" value="" id="password"  name="pass" >
                                 </div>
                             </div>
                             {literal}
@@ -105,7 +105,7 @@
                                 </script>
                             {/literal}
                             <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-9">
+                                <div class="col-sm-offset-3 col-xs-offset-3 col-sm-9 col-xs-9">
                                     <div class="checkbox">
                                         <label>
                                             <input type="checkbox" id="save-pw" /> Remember me
@@ -114,7 +114,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-9">
+                                <div class="col-sm-offset-3 col-xs-offset-3 col-sm-9 col-xs-9">
                                     <button class="submit button blue jquery-corner">Login</button>
                                 </div>
                             </div>
