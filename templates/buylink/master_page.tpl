@@ -60,8 +60,9 @@ Keywords: textlink, backlinks, seo, sem, internet marketing, online marketing, t
                     grabCursor: true,
                     paginationClickable: true
                 });
+
                 var swiper = new Swiper('.mainswmb', {
-                    pagination : '.pagination1',
+                    pagination : '.pagination2',
                     loop:true,
                     grabCursor: true,
                     paginationClickable: true
@@ -75,7 +76,7 @@ Keywords: textlink, backlinks, seo, sem, internet marketing, online marketing, t
                 var leftMenu;
                 var leftContent = jQuery('.wrapper .container .row .left-slider');
                 var $width = jQuery('body').width();
-                if($width <= 768){
+                if($width <= 961){
                     leftContent.attr('id','left-bottom');
                     leftMenu = leftContent.remove();
                     leftMenu.appendTo(".wrapper .container .inner-content");
@@ -85,7 +86,7 @@ Keywords: textlink, backlinks, seo, sem, internet marketing, online marketing, t
                     var $width = jQuery('body').width();
                     var leftContent = jQuery('.wrapper .container .row .left-slider');
                     var $id = leftContent.attr('id');
-                    if($width <= 768){
+                    if($width <= 961){
                         if($id != 'left-bottom'){
                             leftMenu = leftContent.remove();
                             leftMenu.appendTo(".wrapper .container .inner-content");

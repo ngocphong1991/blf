@@ -458,9 +458,9 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
 .mainsw, .mainsw .swiper-slide{width: 100%;height: 480px;}
 .mainswmb, .mainswmb .swiper-slide{width: 100%;height: 278px;}
 .swiper-slide img{width: 100%; height: 100%;}
-.pagination1 {text-align: center;margin-top: 5px; position: absolute; right: 50px; bottom: 20px; z-index: 100}
-.pagination1 .swiper-pagination-switch {display: inline-block;width: 10px;height: 10px;border-radius: 10px;background: #999;box-shadow: 0px 1px 2px #555 inset;margin: 0 3px;cursor: pointer;}
-.pagination1 .swiper-active-switch {background: #fff;}
+.pagination1, .pagination2 {text-align: center;margin-top: 5px; position: absolute; right: 50px; bottom: 20px; z-index: 100}
+.pagination1 .swiper-pagination-switch, .pagination2 .swiper-pagination-switch{display: inline-block;width: 10px;height: 10px;border-radius: 10px;background: #999;box-shadow: 0px 1px 2px #555 inset;margin: 0 3px;cursor: pointer;}
+.pagination1 .swiper-active-switch, .pagination2 .swiper-active-switch{background: #fff;}
 
 /* CMS PAGE*/
 .pkg:after {
@@ -820,11 +820,11 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
 .menu-contact .hot-line p{color: #ffffff; font-weight: bold}
 .menu-contact span.title{color: #ffffff; line-height: 30px; font: 15px Arial, Helvetica, sans-serif}
 .menu-contact b{color: #ffffff; font: bold 15px Arial, Helvetica, sans-serif; line-height: 22px;}
-@media (max-width: 769px) {
+@media (max-width: 962px) {
     .container {
         width: 750px;
     }
-    .doitac{bottom: 325px}
+    .doitac{bottom: 325px; background-position: 0px -16px}
     .doitac .inner-doitac{width: 100%; height: 100%; background: url("../images/responsive/doi-tac.png") no-repeat center transparent}
     .right-content-paper{margin-top: 30px; min-height: 400px}
     .marketing h2{font-size: 20px; font-weight: normal}
@@ -845,8 +845,11 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
     .except{width: 100%; min-height: 350px}
     .menu-contact{width: 215px; position: absolute; right: 0; margin-top: 0}
     .paper{background: #ffffff}
+    .pagination2{
+        bottom: 10px;
+    }
 }
-@media (min-width: 769px) {
+@media (min-width: 962px) {
     .container {
         width: 962px;
     }

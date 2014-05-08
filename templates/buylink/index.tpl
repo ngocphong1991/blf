@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <div class="pagination pagination1"></div>
+        <div class="pagination pagination2"></div>
     </div>
     <!-- /END THE BANNER SLIDER -->
 
