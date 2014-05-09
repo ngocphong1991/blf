@@ -137,10 +137,10 @@ if($_POST['pid']) {
 <body>
  <p>Xin chào, '.$oneUser["username"].'<strong></strong><br />
     <br />
-  Xin chúc mừng bạn! Website <a href="'.$onePublishersinfo["url"].'" target="_blank">'.$onePublishersinfo["url"].'</a>&nbsp;đã được định giá. Textlink luôn đưa ra một mức giá hấp dẫn nhất dành cho các website chất lượng. Để website của bạn luôn xuất hiện trên <a href="'.$onePublishersinfo["url"].'">marketplace</a> của chúng tôi, Bạn hãy <a href="http://textlink.vn/publishers.php?step=1">vào đây</a> để cài đặt code của textlink ngay hôm nay và kiếm tiền dễ dàng với số lượng lớn Advertiser của chúng tôi. <br />
+  Xin chúc mừng bạn! Website <a href="'.$onePublishersinfo["url"].'" target="_blank">'.$onePublishersinfo["url"].'</a>&nbsp;đã được định giá. Textlink luôn đưa ra một mức giá hấp dẫn nhất dành cho các website chất lượng. Để website của bạn luôn xuất hiện trên <a href="'.$onePublishersinfo["url"].'">marketplace</a> của chúng tôi, Bạn hãy <a href="$_config[www]/publishers.php?step=1">vào đây</a> để cài đặt code của textlink ngay hôm nay và kiếm tiền dễ dàng với số lượng lớn Advertiser của chúng tôi. <br />
   <br />
   Textlink trên website của bạn được bán với giá: '.$onePublishersinfo["sale_price"].' USD/textlink/tháng và bạn sẽ nhận được: '.$onePublishersinfo["set_price"].' USD/textlink/tháng. Mức giá này được Textlink đưa ra dựa trên việc đánh giá rất nhiều yếu tố trên website của bạn.<br />
-  Thu nhập từ việc bán textlink trên website của bạn sẽ được tự động chuyển vào tài khoản của bạn sau khi các đơn hàng kết thúc thành công. Bạn có thể&nbsp;<u>truy cập vào tài khoản</u><a href="http://textlink.vn/account.php/">your</a><u> account</u>&nbsp;bất cứ lúc nào để quản lý và theo dõi thu nhập của bạn.<br />
+  Thu nhập từ việc bán textlink trên website của bạn sẽ được tự động chuyển vào tài khoản của bạn sau khi các đơn hàng kết thúc thành công. Bạn có thể&nbsp;<u>truy cập vào tài khoản</u><a href="'.$_config[www].'"/account.php/">your</a><u> account</u>&nbsp;bất cứ lúc nào để quản lý và theo dõi thu nhập của bạn.<br />
   Nếu bạn gặp bất cứ vấn đề nào về việc cài đặt code hoặc không hài lòng với mức giá chúng tôi đưa ra, xin vui lòng liên hệ với chúng tôi.<br />
   <br />
   Xin chân thành cảm ơn!<br />

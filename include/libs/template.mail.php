@@ -18,7 +18,7 @@ global $_config;
   <br />
   Thông tin liên lạc<br />
   <u>support@textlink.vn</u> <br />
-  <u>http://textlink.vn</u> <br />
+  <u>$_config[www]</u> <br />
   Tầng 15, tòa nhà Charmvit Tower&nbsp;|117 Trần Duy Hưng, Hà Nội | &nbsp; (04).62698999 | &nbsp;&nbsp;<u><a href="$_config[www]">Buylink</a></u> <br />
   &copy; 2012 Buylink .  All rights reserved.</p>
   </body>
@@ -40,7 +40,7 @@ Textlink rất mong muốn được đóng góp vào thành công của khách h
 <br />
  Thông Tin Liên Lạc <br />
   <u>support@textlink.vn</u> <br />
-  <u>http://textlink.vn</u> <br />
+  <u>$_config[www]</u> <br />
   Tầng 15, Tòa nhà Charmvit Tower &nbsp;| &nbsp; 117 Trần Duy Hưng, Hà Nội | &nbsp; (04).62698999 | &nbsp;&nbsp;<u><a href="$_config[www]">Textlink.vn</a></u> <br />
   &copy; 2012 Textlink.vn .  All rights reserved.</p>
   </body>
@@ -228,7 +228,7 @@ $message_pub = <<<EOF
   </p>
   Textlink.vn Publisher  Support<br />
   <u>support@textlink.vn</u> <br />
-  <u>http://textlink.vn</u> <br />
+  <u>$_config[www]</u> <br />
   Tầng 15, Tòa nhà Charmvit Tower | &nbsp; 117 Trần Duy Hưng, Cầu Giấy, Hà Nội | &nbsp; (04).62698999 | &nbsp;&nbsp;<u><a href="$_config[www]">Textlink.vn</a></u> <br />
   &copy; 2012 Textlink.vn .  All rights reserved.</p>
   </body>

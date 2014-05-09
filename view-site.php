@@ -3,7 +3,7 @@ include ("include/config.php");
 require('classes/class_publishersinfo.php'); $cls_Publishersinfo = new Publishersinfo();
 $smarty->assign('cls_Publishersinfo', $cls_Publishersinfo);
 
-if(!isset($_SESSION[uid])) header('Location: http://textlink.vn/');
+if(!isset($_SESSION[uid])) header('Location: '.$_config[www]);
 $pid = isset($_GET[pid])?intval($_GET[pid]):0;
 $list = $cls_Publishersinfo->getOne($pid);
 

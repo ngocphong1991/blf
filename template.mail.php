@@ -13,7 +13,7 @@ global $_config;
   So get started by&nbsp;<a href="$_config[www]/publishers.php?step=1" target="_blank">installing our ad code  now</a>&nbsp;and we look forward to  servicing you as a Textlink.vn publisher!<br />
   Textlink.vn Publisher  Support<br />
   <u>support@textlink.vn</u> <br />
-  <u>http://textlink.vn</u> <br />
+  <u>$_config[www]</u> <br />
   117 Tran Duy Hung&nbsp; Street &nbsp; | &nbsp; 17th Floor Charmvit  Tower&nbsp; | &nbsp; Hanoi | &nbsp; (04).62698999 | &nbsp;&nbsp;<u><a href="$_config[www]">Textlink.vn</a></u> <br />
   &copy; 2012 Textlink.vn .  All rights reserved.</p>
   </body>
@@ -32,7 +32,7 @@ Standard Text link ads - these advertisements generally typically appear in the 
 Thanks again and we look forward to serving you as a successful Textlink.vn  client soon! Please feel free to reach out to me with any questions you may  have.&nbsp;<br />
  Textlink.vn Publisher  Support<br />
   <u>support@textlink.vn</u> <br />
-  <u>http://textlink.vn</u> <br />
+  <u>$_config[www]</u> <br />
   117 Tran Duy Hung&nbsp; Street &nbsp; | &nbsp; 17th Floor Charmvit  Tower&nbsp; | &nbsp; Hanoi | &nbsp; (04).62698999 | &nbsp;&nbsp;<u><a href="$_config[www]">Textlink.vn</a></u> <br />
   &copy; 2012 Textlink.vn .  All rights reserved.</p>
   </body>
@@ -50,10 +50,10 @@ EOF;
 		  <br>
 		  Your site&nbsp;<a href="$publisher_arr[url]" target="_blank">$publisher_arr[url]</a> has been accepted.<br>
 		  <br>
-		  The implementation instructions can be found by logging into the&nbsp;<a href="http://textlink.vn/publishers.php?pid=$publisher_arr[pid]&do=edit" target="_blank">Install Ad Code</a>&nbsp;page. Once there, simply click on the  &quot;Get Ad Code&quot; link next to your url and you will be walked through a  simple ad code wizard.&nbsp;<strong>Please note:</strong> </p>
+		  The implementation instructions can be found by logging into the&nbsp;<a href="$_config[www]/publishers.php?pid=$publisher_arr[pid]&do=edit" target="_blank">Install Ad Code</a>&nbsp;page. Once there, simply click on the  &quot;Get Ad Code&quot; link next to your url and you will be walked through a  simple ad code wizard.&nbsp;<strong>Please note:</strong> </p>
 		<ul>
 		  <li>You must keep our  script installed for your site to remain in our marketplace.</li>
-		  <li>To make any changes to  your listing you can edit their listing at&nbsp;<a href="http://textlink.vn/publishers.php?step=1" target="_blank">$_config[www]/r/publisher/list_sites</a> </li>
+		  <li>To make any changes to  your listing you can edit their listing at&nbsp;<a href="$_config[www]/publishers.php?step=1" target="_blank">$_config[www]/r/publisher/list_sites</a> </li>
 		</ul>
 		<p><br>
 		  Please&nbsp;<a href="$_config[www]/publishers.php?step=1" target="_blank">install the ad script</a>&nbsp;now to start making money. Remember placing  our ad in a prominent space on your website will result in more sales and a  better renewal rate from our advertisers!&nbsp; <br>

@@ -73,7 +73,7 @@ Cảm ơn bạn đã giúp chúng tôi giải quyết vấn đề này!<br><br>
 <br>
 TextLink.vn Support<br>
 <a href="mailto:support@textlink.vn" target="_blank">support@textlink.vn</a><br>
-<a href="http://textlink.vn" target="_blank">http://textlink.vn</a>
+<a href="'.$_config[www].'" target="_blank">'.$_config[www].'</a>
 </body>
 </html>
 ';
@@ -84,7 +84,7 @@ $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 // Additional headers
 $headers .= 'To: <'.$to.'>, <'.$to.'>' . "\r\n";
-$headers .= 'From: TextLink.vn <support@textlink.vn>' . "\r\n";
+$headers .= 'From: Buylink <support@textlink.vn>' . "\r\n";
 
 // Mail it
 mail($to, $subject, $message, $headers);

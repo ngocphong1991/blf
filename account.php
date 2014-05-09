@@ -79,7 +79,7 @@ Click the link below to confirm that you wish your password reset.<br><br>
 
   Textlink Ads Support<br />
   <u>support@textlink.vn</u> <br />
-  <u>http://textlink.vn</u> <br />
+  <u>$_config[www]</u> <br />
   117 Tran Duy Hung&nbsp; Street &nbsp; | &nbsp; 17th Floor Charmvit  Tower&nbsp; | &nbsp; Hanoi | &nbsp; (04).62698999 | &nbsp;&nbsp;<u><a href="$_config[www]">Textlink.vn</a></u> <br />
   &copy; 2012 Buylink .  All rights reserved.</p>
   </body>
