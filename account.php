@@ -17,13 +17,19 @@ require('classes/class_country.php'); $cls_country = new Country(); $smarty->ass
 					if ($u_stat == 'suspended') 
 						$msg = 'Your account is suspended. Please contact with the admin.';
 					elseif ($u_stat == 'ok') {
-						if($_POST[red_url]!="")
-                            echo '<script type="text/javascript">window.location.href = "'.$_POST[red_url].'";</script>';
-						else echo '<script type="text/javascript">window.location.href = "'.$_config[www].'/marketplace";</script>';
+                            if($_POST[red_url]!="")
+                                echo '<script type="text/javascript">window.location.href = "'.$_POST[red_url].'";</script>';
+                            else{
+
+                                if(isset($_POST['save-pw']) && $_POST['save-pw']){
+                                    setcookie("login", $_SESSION['uid'], time()+2592000);
+                                }
+                                echo '<script type="text/javascript">window.location.href = "'.$_config[www].'/marketplace";</script>';
+                            }
 						}
 					else
 						$msg = 'User name & Password does not match';
-				}
+                }
 			}
 
 			if(isset($_GET[reset_password]) && !isset($_SESSION[uid])) {	
@@ -517,6 +523,8 @@ EOF;
 				$smarty->assign('content',$content);
 				$smarty->display('master_page.tpl');
 			}
-			
+if($_SESSION['uid']){
+    header("location: ".$_config[www]."/marketplace");
+}
 			
 ?>

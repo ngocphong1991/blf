@@ -74,6 +74,27 @@ if($_SESSION[uid]){
 	$total_cart = getTotalCart();
 	$smarty->assign('total_cart', $total_cart);
 
+}else{
+    if(isset($_COOKIE["login"]) && is_numeric($_COOKIE["login"])){
+        $res = mysql_query('' . 'SELECT * FROM users WHERE uid=\'' . mysql_real_escape_string(strip_tags(trim($_COOKIE["login"]))) . '\' LIMIT 1');
+        if (mysql_num_rows($res)) {
+            if (!mysql_result($res, 0, 'status')) {
+                return 'suspended';
+            }
+            $_SESSION['uid']      = mysql_result($res, 0, 'uid');
+            $_SESSION['username'] = mysql_result($res, 0, 'username');
+            $_SESSION['fullname'] = mysql_result($res, 0, 'fullname');
+            $_SESSION['adv_money'] = mysql_result($res, 0, 'adv_money');
+            $_SESSION['pub_money'] = mysql_result($res, 0, 'pub_money');
+            $_SESSION['utype']    = mysql_result($res, 0, 'utype');
+            $_SESSION['email']    = mysql_result($res, 0, 'email');
+            if ($_SESSION['utype'] == 'pub+adv') {
+                $_SESSION['show_pub_stat'] = 'Y';
+            } else {
+                $_SESSION['show_pub_stat'] = 'N';
+            }
+        }
+    }
 }
 ob_end_clean();
 ?>

@@ -89,7 +89,7 @@ date_default_timezone_set('Asia/Bangkok');
 					}
 					
 					$cls_Publishersinfo->updateOne($edit_action, $value); 					
-					//header("location: ".$_config['www']."/admin/publisherinfo.php?edit=".$edit_action.""); 
+					header("location: ".$_config['www']."/admin/publisherinfo.php?edit=".$edit_action."");
 				    
 			}
 	}

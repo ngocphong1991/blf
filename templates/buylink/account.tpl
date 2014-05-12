@@ -108,7 +108,7 @@
                                 <div class="col-sm-offset-3 col-xs-offset-3 col-sm-9 col-xs-9">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" id="save-pw" /> Remember me
+                                            <input type="checkbox" id="save-pw" name="save-pw" /> Remember me
                                         </label>
                                     </div>
                                 </div>

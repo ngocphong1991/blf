@@ -13,6 +13,7 @@ body {
     position: relative;
     font-size: 12px;
     font-family: Arial,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    min-width: 768px;
 }
 a:hover{text-decoration: none}
 .container{padding: 0; border: none}
@@ -169,13 +170,13 @@ input[type="radio"], input[type="checkbox"]{margin-top: 0}
 .left-slider .menu-block .menu-left-wrap .menu-level-1 ul li a{text-decoration: none; padding: 10px 15px; display: block}
 .left-slider .ad-block{margin-top: 40px}
 .left-slider .ad-block p{margin-bottom: 20px}
-.left-slider .ad-block a{padding: 8px 14px; color: #ffffff; text-transform: uppercase; text-align: center; background: url("../images/bg-menu-top.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0)}
+.left-slider .ad-block a{padding: 8px 14px; color: #ffffff; text-transform: uppercase; text-align: center; background: url("../images/bg-menu-top.png") repeat-x scroll 0 0}
 .left-slider label{text-transform: capitalize; font-weight: normal}
 .left-slider input{width: 100%; margin-bottom: 10px}
-.left-slider h6{text-align: center; padding: 5px; color: white; background: url("../images/bg-menu-top.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0)}
+.left-slider h6{text-align: center; padding: 5px; color: white; background: url("../images/bg-menu-top.png") repeat-x scroll 0 0 transparent}
 .left-slider ul{padding: 0}
 .left-slider ul li{list-style: none}
-.register-block button{padding: 5px 15px; margin-top: 5px; text-align: center; border: none; color: #ffffff; text-transform: uppercase; background: url("../images/bg-menu-top.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0)}
+.register-block button{padding: 5px 15px; margin-top: 5px; text-align: center; border: none; color: #ffffff; text-transform: uppercase; background: url("../images/bg-menu-top.png") repeat-x scroll 0 0}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -227,10 +228,10 @@ input[type="radio"], input[type="checkbox"]{margin-top: 0}
     border-color: #eee #eee #119bd1;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-    border-color: #119bd1 #119bd1 rgba(0, 0, 0, 0);
+    border-color: #119bd1 #119bd1 transparent;
 }
 .tab-content{ border: 1px solid #119bd1; border-top: none; padding: 10px 20px;
-    border-radius: 0 0 5px 5px;  -webkit-border-radius: 5px; -moz-border-radius: 5px;
+    border-radius: 0 0 5px 5px;  -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px;
 }
 .tab-pane ul {padding: 0;margin: 0}
 .tab-pane ul li{list-style: none}
@@ -490,7 +491,7 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
     padding-bottom: 20px;
 }
 .about-one .a-icon1, .about-one .a-icon2, .about-one .a-icon3 {
-    background: url("../images/about_conp.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../images/about_conp.png") no-repeat scroll 0 0 transparent;
     display: block;
     float: left;
     height: 48px;
@@ -705,7 +706,7 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
 }
 
 .buylinkmanage .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    #border-color: #CCCCCC #CCCCCC rgba(0, 0, 0, 0);
+    #border-color: #CCCCCC #CCCCCC transparent;
 }
 .buylinkmanage ul li a{
     font-size: 12px;
@@ -745,9 +746,6 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
 }
 .weblike form div.col-sm-6{
     padding-left: 0px;
-}
-.weblike div.wldanhmuc{
-    color: ;
 }
 .checklevel{
     border: 1px solid #CCCCCC;
@@ -797,7 +795,7 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
 =======================================================================================================================
 */
 .doitac{
-    background: url("../images/bg-doi-tac.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../images/bg-doi-tac.png") repeat-x scroll 0 0 transparent;
     bottom: 310px;
     height: 108px;
     position: absolute;
@@ -820,6 +818,7 @@ button.submit{text-transform: capitalize; padding-top: 10px; font-weight: bold; 
 .menu-contact .hot-line p{color: #ffffff; font-weight: bold}
 .menu-contact span.title{color: #ffffff; line-height: 30px; font: 15px Arial, Helvetica, sans-serif}
 .menu-contact b{color: #ffffff; font: bold 15px Arial, Helvetica, sans-serif; line-height: 22px;}
+.img-thumbnail{max-width: 300px}
 @media (max-width: 962px) {
     .container {
         width: 750px;
